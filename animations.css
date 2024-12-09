@@ -1,0 +1,195 @@
+
+/* corazón 1*/
+/* <div class="lds-heart"><div></div></div> */
+.lds-heart,
+.lds-heart div,
+.lds-heart div:after,
+.lds-heart div:before {
+  box-sizing: border-box;
+}
+.lds-heart {
+  display: inline-block;
+  position: relative;
+  transform: rotate(45deg);
+  transform-origin: 40px 40px;
+}
+
+.lds-heart div {
+  top: 28px;
+  left: 2px;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: red;
+  animation: lds-heart 5.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.lds-heart div:after,
+.lds-heart div:before {
+  content: ' ';
+  position: absolute;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: red;
+}
+.lds-heart div:before {
+  left: -12px;
+  border-radius: 50% 0 0 50%;
+}
+.lds-heart div:after {
+  top: -12px;
+  border-radius: 50% 50% 0 0;
+}
+@keyframes lds-heart {
+  0% {
+    transform: scale(0.95);
+  }
+  5% {
+    transform: scale(1.1);
+  }
+  39% {
+    transform: scale(0.85);
+  }
+  45% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+/* corazón 2 */
+
+/* HTML: <div class="loader"></div> */
+.loader-1 {
+  width: 50px;
+  aspect-ratio: 1;
+  color: #dc1818;
+  background: radial-gradient(circle at 60% 65%, currentColor 62%, #0000 65%)
+      top left,
+    radial-gradient(circle at 40% 65%, currentColor 62%, #0000 65%) top right,
+    linear-gradient(to bottom left, currentColor 42%, #0000 43%) bottom left,
+    linear-gradient(to bottom right, currentColor 42%, #0000 43%) bottom right;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.loader-1:after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  opacity: 0.4;
+  animation: l3 1s infinite;
+}
+@keyframes l3 {
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+/* entrar a la aplicación ojitos*/
+/* HTML: <div class="loader"></div> */
+.loader2 {
+  display: inline-flex;
+  gap: 10px;
+}
+.loader2:before,
+.loader2:after {
+  content: '';
+  height: 20px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(farthest-side, #000 95%, #0000) 35% 35%/6px 6px
+    no-repeat #fff;
+  animation: l5 3s infinite;
+}
+@keyframes l5 {
+  0%,
+  11% {
+    background-position: 35% 35%;
+  }
+  14%,
+  36% {
+    background-position: 65% 35%;
+  }
+  38%,
+  61% {
+    background-position: 65% 65%;
+  }
+  64%,
+  86% {
+    background-position: 35% 65%;
+  }
+  88%,
+  100% {
+    background-position: 35% 35%;
+  }
+}
+
+
+
+
+@keyframes totleAnimation {
+  0%{
+    letter-spacing: 40px;
+    transform: rotate(0deg) translateX(50%);
+    color: rgb(0, 204, 255);
+    margin-left: -250px;
+  }
+  10%{
+    color: rgb(177, 0, 247);
+  }
+  20%{
+    color: rgb(246, 255, 0);
+  }
+  30%{
+    color: rgb(0, 217, 0);
+  }
+  40%{
+    color: rgb(255, 0, 255);
+  }
+  50%{
+    transform: rotate(360deg) translateX(-50%);
+    color: red;
+    margin-left: 0px;
+
+  }
+  80%{
+    color: white;
+    letter-spacing: 0px;
+  }
+  100%{
+    letter-spacing: 5px;
+    transform: rotate(360deg) translateX(-50%);
+
+  }
+}
+@keyframes opacityAnimation {
+  0%, 80%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes growShrink {
+  0% { transform: scale(1);color: black;}
+  50% { transform: scale(1.5); color: rgb(230, 0, 255);}
+  100% { transform: scale(1);color: black;}
+}
+@keyframes bulala {
+  0% { transform: scale(1);color: rgb(17, 213, 239);}
+  50% { transform: scale(1.5); color: rgb(255, 0, 0);}
+  100% { transform: scale(1);color: rgb(0, 0, 0);}
+}
+@keyframes growShrinkHeart {
+  0% { transform: scale(1); background-color: red; }
+  50% { transform: scale(1.1); background-color: rgb(230, 0, 255); }
+  100% { transform: scale(1); background-color: red; }
+}

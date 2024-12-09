@@ -13,7 +13,10 @@ a {
   color: inherit;
   border: none;
 }
-
+mark{
+  padding: 2px 5px;
+  border-radius: 10px;
+}
 .nav-box {
   display: flex;
   justify-content: space-between;
@@ -31,13 +34,13 @@ a {
 }
 .nav-box div {
   display: flex;
-  gap: 40px;
+  gap: 1vw;
 }
 
 .nav-box div button {
   background-color: transparent;
-  font-size: 20px;
-  padding: 5px 10px;
+  font-size: calc(10px + 0.5vw);
+  padding: 1px 3px;
   border-radius: 10px;
 }
 
@@ -135,22 +138,60 @@ transition: 0.3s ease-in-out;
 
 /* historias felices parejas */
 /* historias felices parejas */
-.historias-felices-box{
-  display: none;
+#historias-felices-box{
+  display: block;
 }
+/* existe section:first-of-type también para expecificar que seleccione solo el primero el tipo*/
+/* #historias-felices-box section:nth-of-type(1) h2{
+font-size: calc(25px + 0.6vw);
+margin: 60px 0px 10px 0px;
+}
+#historias-felices-box section:nth-of-type(1) h3{
+font-size: calc(15px + 0.3vw);
+} */
+ .title-section h2{
+  font-size: calc(25px + 0.6vw);
+  margin: 60px 0px 10px 0px;
+ }
+ .title-section h3{
+  font-size: calc(15px + 0.3vw);
+ }
+ .title-section h2{
+  font-size: calc(25px + 0.6vw);
+  margin: 60px 0px 10px 0px;
+ }
 .parejas-figure {
-  background-color: rgba(195, 253, 255, 0.349);
+  background-color: rgba(255, 221, 195, 0.349);
   padding: 10px 10px;
   border-radius: 10px;
-  width: calc(150px + 10vw);
-  min-height: calc(200px + 20vw);
+  width: 45vw;
+  display: flex;
+  margin-top: 50px;
 }
 .parejas-figure img {
   border-radius: 15px 35px 15px 142px;
-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
   width: 90%;
 }
-
+.parejas-info{
+  background-color: rgba(255, 160, 160, 0.242);
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+}
+.parejas-info h2{
+font-size: calc(20px + 0.5vw);
+margin: 10px 0px;
+}
+.parejas-info p{
+font-size: calc(16px + 0.4vw);
+margin: 10px 0px;
+}
+.parejas-info section q {
+font-size: calc(12px + 0.3vw);
+}
+/* historias felices parejas */
+/* historias felices parejas */
 
 
 .formularios-box{
@@ -163,137 +204,6 @@ transition: 0.3s ease-in-out;
 
 
 
-/* corazón 1*/
-/* <div class="lds-heart"><div></div></div> */
-.lds-heart,
-.lds-heart div,
-.lds-heart div:after,
-.lds-heart div:before {
-  box-sizing: border-box;
-}
-.lds-heart {
-  display: inline-block;
-  position: relative;
-  transform: rotate(45deg);
-  transform-origin: 40px 40px;
-}
-
-.lds-heart div {
-  top: 28px;
-  left: 2px;
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  background: red;
-  animation: lds-heart 5.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-.lds-heart div:after,
-.lds-heart div:before {
-  content: ' ';
-  position: absolute;
-  display: block;
-  width: 16px;
-  height: 16px;
-  background: red;
-}
-.lds-heart div:before {
-  left: -12px;
-  border-radius: 50% 0 0 50%;
-}
-.lds-heart div:after {
-  top: -12px;
-  border-radius: 50% 50% 0 0;
-}
-@keyframes lds-heart {
-  0% {
-    transform: scale(0.95);
-  }
-  5% {
-    transform: scale(1.1);
-  }
-  39% {
-    transform: scale(0.85);
-  }
-  45% {
-    transform: scale(1);
-  }
-  60% {
-    transform: scale(0.95);
-  }
-  100% {
-    transform: scale(0.9);
-  }
-}
-
-/* corazón 2 */
-
-/* HTML: <div class="loader"></div> */
-.loader-1 {
-  width: 50px;
-  aspect-ratio: 1;
-  color: #dc1818;
-  background: radial-gradient(circle at 60% 65%, currentColor 62%, #0000 65%)
-      top left,
-    radial-gradient(circle at 40% 65%, currentColor 62%, #0000 65%) top right,
-    linear-gradient(to bottom left, currentColor 42%, #0000 43%) bottom left,
-    linear-gradient(to bottom right, currentColor 42%, #0000 43%) bottom right;
-  background-size: 50% 50%;
-  background-repeat: no-repeat;
-  position: relative;
-}
-.loader-1:after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: inherit;
-  opacity: 0.4;
-  animation: l3 1s infinite;
-}
-@keyframes l3 {
-  to {
-    transform: scale(1.8);
-    opacity: 0;
-  }
-}
-
-/* entrar a la aplicación */
-/* HTML: <div class="loader"></div> */
-.loader2 {
-  display: inline-flex;
-  gap: 10px;
-}
-.loader2:before,
-.loader2:after {
-  content: '';
-  height: 20px;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background: radial-gradient(farthest-side, #000 95%, #0000) 35% 35%/6px 6px
-    no-repeat #fff;
-  animation: l5 3s infinite;
-}
-@keyframes l5 {
-  0%,
-  11% {
-    background-position: 35% 35%;
-  }
-  14%,
-  36% {
-    background-position: 65% 35%;
-  }
-  38%,
-  61% {
-    background-position: 65% 65%;
-  }
-  64%,
-  86% {
-    background-position: 35% 65%;
-  }
-  88%,
-  100% {
-    background-position: 35% 35%;
-  }
-}
 
 .nav-box h3{
   position: absolute;
@@ -314,6 +224,9 @@ transition: 0.3s ease-in-out;
 .nav-box h3:hover span{
   animation: growShrink 1s ease-in-out forwards;
 }
+.nav-box h3:not(:hover) span{
+  animation: bulala 1s ease-in-out forwards;
+}
 .nav-box h3:hover span:nth-child(1) { animation-delay: 0s; } 
 .nav-box h3:hover span:nth-child(2) {  animation-delay: 0.2s;} 
 .nav-box h3:hover span:nth-child(3) {  animation-delay: 0.4s;} 
@@ -326,58 +239,4 @@ transition: 0.3s ease-in-out;
 .nav-box h3:hover .lds-heart div:after {
   animation: growShrinkHeart 1s ease-in-out forwards;
   animation-delay: 1.4s; 
-}
-@keyframes totleAnimation {
-  0%{
-    letter-spacing: 40px;
-    transform: rotate(0deg) translateX(50%);
-    color: rgb(0, 204, 255);
-    margin-left: -250px;
-  }
-  10%{
-    color: rgb(177, 0, 247);
-  }
-  20%{
-    color: rgb(246, 255, 0);
-  }
-  30%{
-    color: rgb(0, 217, 0);
-  }
-  40%{
-    color: rgb(255, 0, 255);
-  }
-  50%{
-    transform: rotate(360deg) translateX(-50%);
-    color: red;
-    margin-left: 0px;
-
-  }
-  80%{
-    color: white;
-    letter-spacing: 0px;
-  }
-  100%{
-    letter-spacing: 5px;
-    transform: rotate(360deg) translateX(-50%);
-
-  }
-}
-@keyframes opacityAnimation {
-  0%, 80%{
-    opacity: 0;
-  }
-  100%{
-    opacity: 1;
-  }
-}
-
-@keyframes growShrink {
-  0% { transform: scale(1);color: black;}
-  50% { transform: scale(1.5); color: rgb(230, 0, 255);}
-  100% { transform: scale(1);color: black;}
-}
-@keyframes growShrinkHeart {
-  0% { transform: scale(1); background-color: red; }
-  50% { transform: scale(1.1); background-color: rgb(230, 0, 255); }
-  100% { transform: scale(1); background-color: red; }
 }
