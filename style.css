@@ -20,15 +20,22 @@ a {
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.266);
   padding: 10px;
   border-radius: 20px;
+  max-height: 40px;
 }
-
+.nav-img-icon{
+  height: 40px;
+  transition: 0.3s ease-in-out;
+}
+.nav-img-icon:hover{
+  scale: 2;
+}
 .nav-box div {
   display: flex;
   gap: 40px;
 }
 
 .nav-box div button {
-  background-color: rgb(158, 249, 255);
+  background-color: transparent;
   font-size: 20px;
   padding: 5px 10px;
   border-radius: 10px;
@@ -41,7 +48,7 @@ a {
 }
 
 #solteros-box {
-  display:block;
+  display:none;
   margin: auto;
   margin-top: 50px;
   width: 100%;
@@ -68,6 +75,7 @@ a {
   width: calc(150px + 10vw);
   min-height: calc(200px + 20vw);
 }
+
 .solteros-perfil-figure h3 {
 font-size: calc(12px + 0.4vw);
 }
@@ -83,6 +91,7 @@ font-size: calc(12px + 0.3vw);
 transition: 0.3s ease-in-out;
   width: 90%;
 }
+
 .solteros-perfil-figure img:hover {
   border-radius: 12px;
 }
@@ -122,6 +131,34 @@ transition: 0.3s ease-in-out;
   font-size: calc(10px + 0.2vw);
   margin: 0;
 }
+
+
+/* historias felices parejas */
+/* historias felices parejas */
+.historias-felices-box{
+  display: none;
+}
+.parejas-figure {
+  background-color: rgba(195, 253, 255, 0.349);
+  padding: 10px 10px;
+  border-radius: 10px;
+  width: calc(150px + 10vw);
+  min-height: calc(200px + 20vw);
+}
+.parejas-figure img {
+  border-radius: 15px 35px 15px 142px;
+transition: 0.3s ease-in-out;
+  width: 90%;
+}
+
+
+
+.formularios-box{
+  display: none;
+}
+
+
+
 
 
 
@@ -256,4 +293,91 @@ transition: 0.3s ease-in-out;
   100% {
     background-position: 35% 35%;
   }
+}
+
+.nav-box h3{
+  position: absolute;
+  left: 50%;  
+  font-size: calc(20px + 0.5vw);
+  animation: totleAnimation 4s linear;
+  transform: translate(-50%);
+  display: flex;
+  letter-spacing: 5px;
+  transition: 1s ease-in-out;
+}
+.heart-span{
+  animation: opacityAnimation 4s linear;
+}
+.nav-box h3:hover {
+  letter-spacing: 15px;
+}
+.nav-box h3:hover span{
+  animation: growShrink 1s ease-in-out forwards;
+}
+.nav-box h3:hover span:nth-child(1) { animation-delay: 0s; } 
+.nav-box h3:hover span:nth-child(2) {  animation-delay: 0.2s;} 
+.nav-box h3:hover span:nth-child(3) {  animation-delay: 0.4s;} 
+.nav-box h3:hover span:nth-child(4) { animation-delay: 0.6s;} 
+.nav-box h3:hover span:nth-child(5) { animation-delay: 0.8s;} 
+.nav-box h3:hover span:nth-child(6) {  animation-delay: 1s;} 
+.nav-box h3:hover span:nth-child(7) { animation-delay: 1.2s; } 
+.nav-box h3:hover .lds-heart div { animation: growShrinkHeart 1s ease-in-out forwards;  animation-delay: 1.4s; }
+.nav-box h3:hover .lds-heart div:before,
+.nav-box h3:hover .lds-heart div:after {
+  animation: growShrinkHeart 1s ease-in-out forwards;
+  animation-delay: 1.4s; 
+}
+@keyframes totleAnimation {
+  0%{
+    letter-spacing: 40px;
+    transform: rotate(0deg) translateX(50%);
+    color: rgb(0, 204, 255);
+    margin-left: -250px;
+  }
+  10%{
+    color: rgb(177, 0, 247);
+  }
+  20%{
+    color: rgb(246, 255, 0);
+  }
+  30%{
+    color: rgb(0, 217, 0);
+  }
+  40%{
+    color: rgb(255, 0, 255);
+  }
+  50%{
+    transform: rotate(360deg) translateX(-50%);
+    color: red;
+    margin-left: 0px;
+
+  }
+  80%{
+    color: white;
+    letter-spacing: 0px;
+  }
+  100%{
+    letter-spacing: 5px;
+    transform: rotate(360deg) translateX(-50%);
+
+  }
+}
+@keyframes opacityAnimation {
+  0%, 80%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes growShrink {
+  0% { transform: scale(1);color: black;}
+  50% { transform: scale(1.5); color: rgb(230, 0, 255);}
+  100% { transform: scale(1);color: black;}
+}
+@keyframes growShrinkHeart {
+  0% { transform: scale(1); background-color: red; }
+  50% { transform: scale(1.1); background-color: rgb(230, 0, 255); }
+  100% { transform: scale(1); background-color: red; }
 }
