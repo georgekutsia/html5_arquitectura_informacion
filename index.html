@@ -43,7 +43,6 @@
 
   <main>
     <section id="solteros-box" >
-      <!-- no estoy seguro del uso de title para esto -->
       <section class="title-section"> 
         <h2>Nuestros Solteros</h2>
         <h3>Muy <em>Abiertos</em>, nuestros perfiles de oro que aún no están <em>cerrados</em>...</h3>
@@ -550,7 +549,15 @@
     </section>
     </section>
     <section id="formularios-box">
-      alla
+      <form action="buscar_afines.php" method="post" class="form-buscar-afines">
+          <fieldset>
+            <legend>Descríbete</legend>
+                <label for="description"> Descríbete</label>
+                <textarea name="description" id="description"></textarea>
+          </fieldset>
+            <legend>¿Qué buscas?</legend>
+          </fieldset>
+      </form>
     </section>
   </main>
   <footer></footer>

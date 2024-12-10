@@ -51,7 +51,7 @@ mark{
 }
 
 #solteros-box {
-  display:none;
+  display:none; /*aqui*/
   margin: auto;
   margin-top: 50px;
   width: 100%;
@@ -139,7 +139,7 @@ transition: 0.3s ease-in-out;
 /* historias felices parejas */
 /* historias felices parejas */
 #historias-felices-box{
-  display: block;
+  display: none; /*aqui*/
 }
 /* existe section:first-of-type también para expecificar que seleccione solo el primero el tipo*/
 /* #historias-felices-box section:nth-of-type(1) h2{
@@ -190,13 +190,6 @@ margin: 10px 0px;
 .parejas-info section q {
 font-size: calc(12px + 0.3vw);
 }
-/* historias felices parejas */
-/* historias felices parejas */
-
-
-.formularios-box{
-  display: none;
-}
 
 #historias-felices-articles{
   display: grid;
@@ -204,6 +197,26 @@ font-size: calc(12px + 0.3vw);
   grid-template-columns: 45% 45%;
   grid-gap: 0 10%;
 }
+
+/* historias felices parejas */
+/* historias felices parejas */
+
+
+
+
+/* formularios */
+/* formularios */
+#formularios-box{
+  display: block; /*aqui*/
+  background: linear-gradient(to left, rgba(255, 197, 97, 0.349), rgba(234, 255, 0, 0.396), rgba(0, 0, 255, 0.207));
+}
+
+
+
+
+
+/* formularios */
+/* formularios */
 
 
 
