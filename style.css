@@ -164,7 +164,7 @@ font-size: calc(15px + 0.3vw);
   background-color: rgba(255, 221, 195, 0.349);
   padding: 10px 10px;
   border-radius: 10px;
-  width: 45vw;
+  /* width: 35vw; */
   display: flex;
   margin-top: 50px;
 }
@@ -198,9 +198,12 @@ font-size: calc(12px + 0.3vw);
   display: none;
 }
 
-
-
-
+#historias-felices-articles{
+  display: grid;
+  /* grid-template-rows: 50px 100px;  no necesitamos por ahora*/
+  grid-template-columns: 45% 45%;
+  grid-gap: 0 10%;
+}
 
 
 
