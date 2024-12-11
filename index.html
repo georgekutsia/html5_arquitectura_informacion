@@ -1,625 +1,641 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <link rel="icon" href="./assets/favicon/favicon2 2.ico" type="image/x-icon">
-  <link rel="icon" href="./script.js" >
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Lugar donde las etiquetas de HTML pueden encontrarse">
-  <meta name="keywords" content="HTML etiquetas meta link head body">
-  <meta name="author" content="George Kutsia">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="animations.css">
-  <script src="script.js" defer></script>
-  <title>HTML love place</title>
-</head>
+   <head>
+      <meta charset="UTF-8">
+      <link rel="icon" href="./assets/favicon/favicon2 2.ico" type="image/x-icon">
+      <link rel="icon" href="./script.js" >
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Lugar donde las etiquetas de HTML pueden encontrarse">
+      <meta name="keywords" content="HTML etiquetas meta link head body">
+      <meta name="author" content="George Kutsia">
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="animations.css">
+      <script src="script.js" defer></script>
+      <title>HTML love place</title>
+   </head>
+   <body >
+      <!-- ya sé que este align no se  usa, pero si quito todo el css, así  se queda centrado para que podáis verlo -->
+      <header>
+         <nav class="nav-box">
+            <!-- si quito el css, la barra de navegación queda en 3 líneas por tenerlas separadas con div... 
+               si quisiera hacerlo todo en la misma línea quitaría los div y el h3 -->
+            <div>
+               <img class="nav-img-icon" src="/assets/imgs/icons/prof.png" alt="imágen de perfil de usuario" height="50px">
+               <button title="Nuestras etiquetas que sin cierre">Abiertas</button>
+               <button title="Las historias felices">Cerradas</button>
+               <button title="Encuentra lo que buscas">Formular</button>
+            </div>
+            <div>
+               <h3>
+                  <span>H</span>
+                  <span>T</span>
+                  <span>M</span>
+                  <span>L</span>
+                  <span>o</span>
+                  <span>v</span>
+                  <span>e</span> 
+                  <span class="heart-span">
+                     <div class="lds-heart">
+                        <div></div>
+                     </div>
+                  </span>
+               </h3>
+            </div>
+            <div>
+               <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/wbr">Atención al usuario</a>
+               <a class="loader2" href="" title="Logarse / Crear perfil">I</a>
+            </div>
+         </nav>
+      </header>
+      <main>
+         <section id="solteros-box" >
+            <section class="title-section">
+               <h2>Nuestros Solteros</h2>
+               <h3>Muy <em>Abiertos</em>, nuestros perfiles de oro que aún no están <em>cerrados</em>...</h3>
+            </section>
+            <section class="solteros-perfil-box">
+               <figure class="solteros-perfil-figure">
+                  <a title="Ven a mi..." href="https://developer.mozilla.org/es/docs/Web/HTML/Element/area" target="_blank"><img src="./assets/imgs/solteros/area-1.png" alt="Soltero Area"></a>
+                  <div class="solteros-profile-info">
+                     <h3>Aventurero, alocado</h3>
+                     <h3>Libra</h3>
+                  </div>
+                  <article class="solteros-profile-description">
+                     <p>Le gusta definir áreas dentro de un mapa de imagen que tiene zonas cliqueables predefinidas. </p>
+                     <q><em> Siempre sabré  cómo conectar contigo en los puntos correctos.</em></q> 
+                     <strong> - Area</strong>
+                     </p>
+                     <div class="solteros-profile-description-footer">
+                        <p><a href="#" style="color: blue">Regístrate </a> para poder contactar con este perfil</p>
+                     </div>
+                  </article>
+               </figure>
+               <figure class="solteros-perfil-figure">
+                  <a title="Ven a mi..." href="https://developer.mozilla.org/es/docs/Web/HTML/Element/base" target="_blank"><img src="./assets/imgs/solteros/base-1.png" alt="Soltero Base"></a>
+                  <div class="solteros-profile-info">
+                     <h3>Casero, confiable</h3>
+                     <h3>Piscis</h3>
+                  </div>
+                  <article class="solteros-profile-description">
+                     <p>Le gusta especificar la dirección URL base que se utilizará para todas las direcciones URL relativas contenidas dentro de un documento. Sólo puede haber uno en un documento. </p>
+                     <q><em> Todo lo que construyas conmigo siempre tendrá la dirección correcta...</em></q> 
+                     <strong> - Base</strong>
+                     </p>
+                     <div class="solteros-profile-description-footer">
+                        <p><a href="#" style="color: blue">Regístrate </a> para poder contactar con este perfil</p>
+                     </div>
+                  </article>
+               </figure>
+               <figure class="solteros-perfil-figure">
+                  <a title="Ven a mi..." href="https://developer.mozilla.org/es/docs/Web/HTML/Element/hr" target="_blank"><img src="./assets/imgs/solteros/hr-1.png" alt="Soltero Hr"></a>
+                  <div class="solteros-profile-info">
+                     <h3>Acertiva, Amorosa</h3>
+                     <h3>Géminis</h3>
+                  </div>
+                  <article class="solteros-profile-description">
+                     <p>Representa un cambio de tema entre párrafos (por ejemplo, un cambio de escena en una historia, un cambio de tema en una sección).</p>
+                     <q><em> Puedo marcar la línea que separa a todos los demás y a mí... contigo.</em></q> 
+                     <strong> - Hr</strong>
+                     </p>
+                     <div class="solteros-profile-description-footer">
+                        <p><a href="#" style="color: blue">Regístrate </a> para poder contactar con este perfil</p>
+                     </div>
+                  </article>
+               </figure>
+               <figure class="solteros-perfil-figure">
+                  <a title="Ven a mi..." href="https://developer.mozilla.org/es/docs/Web/HTML/Element/br" target="_blank"><img src="./assets/imgs/solteros/br-1.png" alt="Soltero Br"></a>
+                  <div class="solteros-profile-info">
+                     <h3>Introvertido</h3>
+                     <h3>Leo</h3>
+                  </div>
+                  <article class="solteros-profile-description">
+                     <p>Suele producir un salto de línea en el texto (retorno de carro). Es útil para escribir un poema o una dirección, donde la división de las líneas es significante.</p>
+                     <q><em> Contigo siempre quiero saltar de línea para seguir escribiendo nuestra historia."</em></q> 
+                     <strong> - Br</strong>
+                     </p>
+                     <div class="solteros-profile-description-footer">
+                        <p><a href="#" style="color: blue">Regístrate </a> para poder contactar con este perfil</p>
+                     </div>
+                  </article>
+               </figure>
+               <figure class="solteros-perfil-figure">
+                  <a title="Ven a mi..." href="https://developer.mozilla.org/es/docs/Web/HTML/Element/col" target="_blank"><img src="./assets/imgs/solteros/col-1.png" alt="Soltero Col"></a>
+                  <div class="solteros-profile-info">
+                     <h3>Estóico, sensible</h3>
+                     <h3>Libra</h3>
+                  </div>
+                  <article class="solteros-profile-description">
+                     <p>Permite especificar propiedades para una columna o un grupo de ellas.</p>
+                     <q><em> Me gusta organizando columnas, pero mi prioridad será siempre tenerte en la primera fila de mi corazón. </em></q> 
+                     <strong> - Area</strong>
+                     </p>
+                     <div class="solteros-profile-description-footer">
+                        <p><a href="#" style="color: blue">Regístrate </a> para poder contactar con este perfil</p>
+                     </div>
+                  </article>
+               </figure>
+               <figure class="solteros-perfil-figure">
+                  <a title="Ven a mi..." href="https://developer.mozilla.org/es/docs/Web/HTML/Element/embed" target="_blank"><img src="./assets/imgs/solteros/embed-1.png" alt="Soltero Embed"></a>
+                  <div class="solteros-profile-info">
+                     <h3>Cariñosa, Peligrosa</h3>
+                     <h3>Acuario</h3>
+                  </div>
+                  <article class="solteros-profile-description">
+                     <p>Le divierte incrustar contenido externo dentro de una página web. Es muy versátil y admite diversos tipos de contenido, como videos, audio, documentos...</p>
+                     <q><em> Puedo integrarme perfectamente en tu vida para que seamos inseparables.</em></q> 
+                     <strong> - Embed</strong>
+                     </p>
+                     <div class="solteros-profile-description-footer">
+                        <p><a href="#" style="color: blue">Regístrate </a> para poder contactar con este perfil</p>
+                     </div>
+                  </article>
+               </figure>
+               <figure class="solteros-perfil-figure">
+                  <a title="Ven a mi..." href="https://developer.mozilla.org/es/docs/Web/HTML/Element/img" target="_blank"><img src="./assets/imgs/solteros/img-1.png" alt="Soltero Img"></a>
+                  <div class="solteros-profile-info">
+                     <h3>Creativa, Impactante</h3>
+                     <h3>Tauro</h3>
+                  </div>
+                  <article class="solteros-profile-description">
+                     <p>Representa una imagen en el documento.</p>
+                     <q><em> Muestro lo que los demás quieren ver, pero contigo sería 100% auténtico.</em></q> 
+                     <strong> - Img</strong>
+                     </p>
+                     <div class="solteros-profile-description-footer">
+                        <p><a href="#" style="color: blue">Regístrate </a> para poder contactar con este perfil</p>
+                     </div>
+                  </article>
+               </figure>
+               <figure class="solteros-perfil-figure">
+                  <a title="Ven a mi..." href="https://developer.mozilla.org/es/docs/Web/HTML/Element/input" target="_blank"><img src="./assets/imgs/solteros/input-1.png" alt="Soltero Input"></a>
+                  <div class="solteros-profile-info">
+                     <h3>Aventurero, Alocado</h3>
+                     <h3>Libra</h3>
+                  </div>
+                  <article class="solteros-profile-description">
+                     <p>Le gusta crear controles interactivos para formularios basados en la web con el fin de recibir datos del usuario.</p>
+                     <q><em> Todo lo que quiero recibir son tus datos para conocerte mejor.</em></q> 
+                     <strong> - Input</strong>
+                     </p>
+                     <div class="solteros-profile-description-footer">
+                        <p><a href="#" style="color: blue">Regístrate </a> para poder contactar con este perfil</p>
+                     </div>
+                  </article>
+               </figure>
+               <figure class="solteros-perfil-figure">
+                  <a title="Ven a mi..." href="https://developer.mozilla.org/es/docs/Web/HTML/Element/link" target="_blank"><img src="./assets/imgs/solteros/link-1.png" alt="Soltero link"></a>
+                  <div class="solteros-profile-info">
+                     <h3>Apegada, Mente abierta</h3>
+                     <h3>Cancer</h3>
+                  </div>
+                  <article class="solteros-profile-description">
+                     <p> Especifica la relación entre el documento actual y un recurso externo. Los usos posibles de este elemento incluyen la definición de un marco relacional para navegación.</p>
+                     <q><em> Quiero ser el hipervínculo que conecte nuestros corazones.</em></q> 
+                     <strong> - Link</strong>
+                     </p>
+                     <div class="solteros-profile-description-footer">
+                        <p><a href="#" style="color: blue">Regístrate </a> para poder contactar con este perfil</p>
+                     </div>
+                  </article>
+               </figure>
+               <figure class="solteros-perfil-figure">
+                  <a title="Ven a mi..." href="https://developer.mozilla.org/es/docs/Web/HTML/Element/meta" target="_blank"><img src="./assets/imgs/solteros/meta-1.png" alt="Soltero meta"></a>
+                  <div class="solteros-profile-info">
+                     <h3>Aventurero, Alocado</h3>
+                     <h3>Libra</h3>
+                  </div>
+                  <article class="solteros-profile-description">
+                     <p> Le emociona aportar información sobre el documento..</p>
+                     <q><em> Quiero entenderte bien, a nivel profundo, que me muestres todos tus metadatos emocionales.</em></q> 
+                     <strong> - Meta</strong>
+                     </p>
+                     <div class="solteros-profile-description-footer">
+                        <p><a href="#" style="color: blue">Regístrate </a> para poder contactar con este perfil</p>
+                     </div>
+                  </article>
+               </figure>
+               <figure class="solteros-perfil-figure">
+                  <a title="Ven a mi..." href="https://developer.mozilla.org/es/docs/Web/HTML/Element/source" target="_blank"><img src="./assets/imgs/solteros/source-1.png" alt="Soltero Source"></a>
+                  <div class="solteros-profile-info">
+                     <h3>Inteligente, Conectada</h3>
+                     <h3>Capricornio</h3>
+                  </div>
+                  <article class="solteros-profile-description">
+                     <p>Especifica recursos de medios múltiples para los elementos picture, audio, o video. Es un elemento vacío.</p>
+                     <q><em> Todo lo que comparto contigo viene directamente de mi código fuente.</em></q> 
+                     <strong> - Source</strong>
+                     </p>
+                     <div class="solteros-profile-description-footer">
+                        <p><a href="#" style="color: blue">Regístrate </a> para poder contactar con este perfil</p>
+                     </div>
+                  </article>
+               </figure>
+               <figure class="solteros-perfil-figure">
+                  <a title="Ven a mi..." href="https://developer.mozilla.org/es/docs/Web/HTML/Element/track" target="_blank"><img src="./assets/imgs/solteros/track-1.png" alt="Soltero Track"></a>
+                  <div class="solteros-profile-info">
+                     <h3>Estudiante, Deportista</h3>
+                     <h3>Sagitario</h3>
+                  </div>
+                  <article class="solteros-profile-description">
+                     <p>Es un hijo de los elementos multimedia, audio y video. Le permite especificar pistas de texto cronometradas (o datos basados en el tiempo), por ejemplo, para manejar subtítulos automáticamente. </p>
+                     <q><em> Quiero sincronizar cada uno de mis pasos con los tuyos."</em></q> 
+                     <strong> - Track</strong>
+                     </p>
+                     <div class="solteros-profile-description-footer">
+                        <p><a href="#" style="color: blue">Regístrate </a> para poder contactar con este perfil</p>
+                     </div>
+                  </article>
+               </figure>
+               <figure class="solteros-perfil-figure">
+                  <a title="Ven a mi..." href="https://developer.mozilla.org/es/docs/Web/HTML/Element/wbr" target="_blank"><img src="./assets/imgs/solteros/wbr-1.png" alt="Soltero Wbr"></a>
+                  <div class="solteros-profile-info">
+                     <h3>Aventurero, Alocado</h3>
+                     <h3>Libra</h3>
+                  </div>
+                  <article class="solteros-profile-description">
+                     <p> Representa una posición dentro del texto donde el explorador puede opcionalmente saltar una línea , aunque sus reglas de salto de línea de otra manera no crearían un salto en esa posición </p>
+                     <q><em> Siempre encontraré el lugar perfecto para pausar y admirarte.</em></q> 
+                     <strong> - Wbr</strong>
+                     </p>
+                     <div class="solteros-profile-description-footer">
+                        <p><a href="#" style="color: blue">Regístrate </a> para poder contactar con este perfil</p>
+                     </div>
+                  </article>
+               </figure>
+            </section>
+         </section>
+         <section id="historias-felices-box">
+            <section class="title-section">
+               <h2>Nuestras historias de éxito</h2>
+               <h3>Parejas inseparables que nos alegra ver todavía juntas. Nos sentimos orgullosos de su éxito conjunto</h3>
+               <h3>y que hayan encontrado su media naranja a través de nosotros</h3>
+            </section>
+            <section id="historias-felices-articles">
+               <article class="parejas-figure">
+                  <figure>
+                     <a  title="Ven a mi..." href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/thead" target="_blank">
+                     <img class="blob" src="./assets/imgs/parejas/pareja-1.png" alt="Soltero Area">
+                     </a>
+                  </figure>
+                  <section class="parejas-info">
+                     <header>
+                        <h2>thead y tbody</h2>
+                        <p>Pareja estable desde <time datetime="1997-12-18"><strong>18 de diciembre de 1997</strong></time></p>
+                     </header>
+                     <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tbody">
+                        <q>
+                        Los dos nos encontrábamos en la misma situación: caos, desorden, desesperación, falta de estructura en nuestra vida. 
+                        Yo lo había dejado con mi pareja <mark>tfoot</mark> porque no me aportaba ninguna conclusión, y tbody estaba en un sinpás con <mark>caption</mark>. 
+                        Así que decidimos probar suerte y... aquí estamos. <strong>Fuertes como columnas</strong>.
+                        </q>
+                     </blockquote>
+                     <footer>
+                        <p>
+                           Nos cuenta con amor <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tbody" target="_blank">thead</a>
+                        </p>
+                     </footer>
+                  </section>
+               </article>
+               <article class="parejas-figure">
+                  <figure>
+                     <a title="Conoce a estos amigos" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tr" target="_blank">
+                     <img class="blob" src="./assets/imgs/parejas/pareja-2.png" alt="Imagen de tres amigos">
+                     </a>
+                  </figure>
+                  <section class="parejas-info">
+                     <header>
+                        <h2>tr, th y td</h2>
+                        <p>Amigos inseparables desde <time datetime="1997-12-18"><strong>18 de diciembre de 1997</strong></time></p>
+                     </header>
+                     <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tr">
+                        <q>
+                        Somos el equipo perfecto. Yo, <mark>tr</mark>, me encargo de mantener todo en orden y organizar las filas. 
+                        <mark>th</mark> siempre está ahí para destacar lo importante, y <mark>td</mark> da forma al contenido. 
+                        Cada uno tiene su rol, pero juntos hacemos que las tablas cobren vida.
+                        <strong>¡La amistad más alineada que existe!</strong>
+                        </q>
+                     </blockquote>
+                     <footer>
+                        <p>
+                           Contado con entusiasmo por <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tr" target="_blank">tr</a>
+                        </p>
+                     </footer>
+                  </section>
+               </article>
+               <article class="parejas-figure">
+                  <figure>
+                     <a title="Ven a mi..." href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure" target="_blank">
+                     <img class="blob" src="./assets/imgs/parejas/pareja-3.png" alt="Figura de pareja cocinando">
+                     </a>
+                  </figure>
+                  <section class="parejas-info">
+                     <header>
+                        <h2>figure y figcaption</h2>
+                        <p>Pareja inseparable desde <time datetime="2014-10-28"><strong>28 de octubre de 2014</strong></time></p>
+                     </header>
+                     <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure">
+                        <q>
+                        Cuando conocí a <mark>figcaption</mark>, todo cobró sentido. 
+                        Antes me sentía incompleto, como si mi propósito no estuviera claro. 
+                        Pero entonces apareció, con su habilidad para describir cualquier imagen, 
+                        y juntos creamos historias completas, perfectas para el mundo del diseño y la accesibilidad. 
+                        Nuestra pasión por cocinar nació el día en que decidimos combinar nuestras fuerzas en la cocina. 
+                        Ahora somos el equipo ideal: yo doy la imagen y ella el contexto. <strong>Somos el plato perfecto.</strong>
+                        </q>
+                     </blockquote>
+                     <footer>
+                        <p>
+                           <cite>
+                           Nos cuenta su historia <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure" target="_blank">figure</a>
+                           </cite>
+                        </p>
+                     </footer>
+                  </section>
+               </article>
+               <article class="parejas-figure">
+                  <figure>
+                     <a title="Ven a conocerlos" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label" target="_blank">
+                     <img class="blob" src="./assets/imgs/parejas/pareja-4.png" alt="Pareja viendo series y películas">
+                     </a>
+                  </figure>
+                  <section class="parejas-info">
+                     <header>
+                        <h2>input y label</h2>
+                        <p>Una pareja unida desde <time datetime="1999-05-01"><strong>1 de mayo de 1999</strong></time></p>
+                     </header>
+                     <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label">
+                        <q>
+                        Nos encanta pasar las tardes juntos. <mark>label</mark> siempre me guía y me muestra qué hacer, 
+                        mientras yo, <mark>input</mark>, hago el trabajo. Ya sea rellenando formularios o eligiendo qué película ver, 
+                        somos el dúo dinámico. ¡Nada nos detiene cuando estamos sincronizados!
+                        </q>
+                     </blockquote>
+                     <footer>
+                        <p>
+                           Compartido con cariño por <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label" target="_blank">label</a>
+                        </p>
+                     </footer>
+                  </section>
+               </article>
+               <article class="parejas-figure">
+                  <figure>
+                     <a title="Descubre a esta familia" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio" target="_blank">
+                     <img class="blob" src="./assets/imgs/parejas/pareja-5.png" alt="Familia en la naturaleza">
+                     </a>
+                  </figure>
+                  <section class="parejas-info">
+                     <header>
+                        <h2>audio y video, junto a su hijo track</h2>
+                        <p>Familia unida desde <time datetime="2014-10-28"><strong>28 de octubre de 2014</strong></time></p>
+                     </header>
+                     <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio">
+                        <q>
+                        Nuestra vida siempre ha estado llena de aventuras. 
+                        <mark>audio</mark> aporta la melodía y <mark>video</mark> la imagen. Y ahora, con nuestro hijo <mark>track</mark>, 
+                        nos encanta viajar por la naturaleza, descubriendo sonidos y paisajes nuevos. <strong>¡Somos el equipo perfecto!</strong>
+                        </q>
+                     </blockquote>
+                     <footer>
+                        <p>
+                           Contado por <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio" target="_blank">audio</a>
+                        </p>
+                     </footer>
+                  </section>
+               </article>
+               <article class="parejas-figure">
+                  <figure>
+                     <a title="Explora con ellos" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a" target="_blank">
+                     <img class="blob" src="./assets/imgs/parejas/pareja-6.png" alt="Dos amigos explorando la naturaleza">
+                     </a>
+                  </figure>
+                  <section class="parejas-info">
+                     <header>
+                        <h2>a e img</h2>
+                        <p>Amigos aventureros desde <time datetime="1999-12-24"><strong>24 de diciembre de 1999</strong></time></p>
+                     </header>
+                     <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a">
+                        <q>
+                        Yo, <mark>a</mark>, siempre busco nuevos destinos. 
+                        Pero no hay aventura completa sin <mark>img</mark>, quien captura cada momento con imágenes increíbles. 
+                        Nos encanta explorar la naturaleza y compartir nuestras experiencias con todos.
+                        <strong>¡La amistad perfecta para cada viaje!</strong>
+                        </q>
+                     </blockquote>
+                     <footer>
+                        <p>
+                           Contado con emoción por <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a" target="_blank">a</a>
+                        </p>
+                     </footer>
+                  </section>
+               </article>
+               <article class="parejas-figure">
+                  <figure>
+                     <a title="Conoce su historia" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote" target="_blank">
+                     <img class="blob" src="./assets/imgs/parejas/pareja-7.png" alt="Pareja literaria escribiendo una cita">
+                     </a>
+                  </figure>
+                  <section class="parejas-info">
+                     <header>
+                        <h2>blockquote y cite</h2>
+                        <p>Pareja literaria desde <time datetime="1999-12-24"><strong>24 de diciembre de 1999</strong></time></p>
+                     </header>
+                     <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite">
+                        <q>
+                        Desde el momento en que nos conocimos, hemos trabajado juntos para capturar ideas. 
+                        Yo, <mark>blockquote</mark>, me encargo de dar espacio a las citas largas, 
+                        pero <mark>cite</mark> siempre sabe cómo atribuirlas y darles crédito a los demás. 
+                        ¡Nuestro amor por las palabras nunca terminará!
+                        </q>
+                     </blockquote>
+                     <footer>
+                        <p>
+                           Narrado con pasión por <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote" target="_blank">blockquote</a>
+                        </p>
+                     </footer>
+                  </section>
+               </article>
+               <article class="parejas-figure">
+                  <figure>
+                     <a title="Descubre a esta pareja" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details" target="_blank">
+                     <img class="blob" src="./assets/imgs/parejas/pareja-8.png" alt="Pareja exploradora de secretos">
+                     </a>
+                  </figure>
+                  <section class="parejas-info">
+                     <header>
+                        <h2>details y summary</h2>
+                        <p>Pareja intrigante desde <time datetime="2010-12-13"><strong>13 de diciembre de 2010</strong></time></p>
+                     </header>
+                     <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details">
+                        <q>
+                        Nuestra relación está basada en la curiosidad y la intriga. 
+                        Yo, <mark>details</mark>, guardo los secretos, pero <mark>summary</mark> siempre está ahí para dar una pista. 
+                        Somos inseparables porque juntos creamos una narrativa única: 
+                        primero lo que se ve, y luego, lo que se descubre. ¡Nos encanta sorprender!
+                        </q>
+                     </blockquote>
+                     <footer>
+                        <p>
+                           Contado con emoción por <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details" target="_blank">details</a>
+                        </p>
+                     </footer>
+                  </section>
+               </article>
+               <article class="parejas-figure">
+                  <figure>
+                     <a title="Conoce a esta familia única" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hgroup" target="_blank">
+                     <img class="blob" src="./assets/imgs/parejas//pareja-9.png" alt="Familia de hgroup y encabezados">
+                     </a>
+                  </figure>
+                  <section class="parejas-info">
+                     <header>
+                        <h2>hgroup y sus hijos: h1, h2, h3, h4, h5 y h6</h2>
+                        <p>Familia adoptiva unida desde <time datetime="2014-10-28"><strong>28 de octubre de 2014</strong></time></p>
+                     </header>
+                     <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hgroup">
+                        <q>
+                        Yo, <mark>hgroup</mark>, nunca pensé que tendría una familia tan diversa. 
+                        Adopté a mis seis hijos, <mark>h1</mark>, <mark>h2</mark>, <mark>h3</mark>, <mark>h4</mark>, <mark>h5</mark>, y <mark>h6</mark>, 
+                        cada uno con una personalidad única. Desde el fuerte y dominante <mark>h1</mark> hasta el tranquilo y pequeño <mark>h6</mark>, 
+                        todos tienen un lugar especial en mi vida. Aunque sean distintos, siempre trabajamos juntos para que cada encabezado cuente una historia completa.
+                        </q>
+                     </blockquote>
+                     <footer>
+                        <p>
+                           Compartido con cariño por <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hgroup" target="_blank">hgroup</a>
+                        </p>
+                     </footer>
+                  </section>
+               </article>
+               <article class="parejas-figure">
+                  <figure>
+                     <a title="Explora esta dinámica lista" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul" target="_blank">
+                     <img class="blob" src="./assets/imgs/parejas/pareja-10.png" alt="Lista y sus elementos">
+                     </a>
+                  </figure>
+                  <section class="parejas-info">
+                     <header>
+                        <h2>ul y sus li</h2>
+                        <p>Compañeros inseparables desde <time datetime="1997-12-18"><strong>18 de diciembre de 1997</strong></time></p>
+                     </header>
+                     <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul">
+                        <q>
+                        Como <mark>ul</mark>, siempre me ha encantado organizar y dar estructura. 
+                        Mis compañeros <mark>li</mark>, aunque son únicos y tienen sus propios estilos, siempre se alinean conmigo para formar una lista perfecta. 
+                        Ya sea una receta, una lista de tareas o una colección de ideas, juntos creamos orden en el caos.
+                        </q>
+                     </blockquote>
+                     <footer>
+                        <p>
+                           Narrado por <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul" target="_blank">ul</a>
+                        </p>
+                     </footer>
+                  </section>
+               </article>
+            </section>
+         </section>
+         <section id="formularios-box">
+            <form action="registro_usuario.php" method="post">
+               <fieldset>
+                  <legend>Descríbete</legend>
+                  <label for="apodo">¿Cual es tu apodo favorito?</label>
+                  <input type="text" id="apodo" />
+                  <label for="otro_tag" >Si fueras otro tag, ¿cuál te gustaría ser y por qué?</label>
+                  <input type="text" id="otro_tag" minlength="1" maxlength="50"/>
+                  <label for="tiempo_libre">¿Qué te gusta hacer en tu tiempo libre?</label>
+                  <textarea type="text" id="tiempo_libre" rows="4" cols="60" minlength="1" maxlength="400"> </textarea>
+                  <label for="color_favorito" >¿Cual es el color que mejor te representa?</label>
+                  <input type="color" id="color_favorito" value="#FF0000">
+                  <label for="tags_pasados" >¿Cual consideras que fue el tag que más te marcó?</label>
+                  <select id="tags_pasados" required >
+                     <option value="ninguno" disabled selected>Selecciona una opción</option>
+                     <option value="label">Label</option>
+                     <option value="Section">Section</option>
+                     <option value="div">Div</option>
+                     <option value="label">Label</option>
+                     <option value="aside">Aside</option>
+                     <option value="label">Label</option>
+                  </select>
+                  <label for="explorador">¿En cual explorador te gusta aparecer con más frecuencia? <em>(Elige una opción)</em> </label>
+                  <div class="explorador-selector">
+                     <input type="radio" name="explorador" value="Chrome" id="chrome">
+                     <label for="chrome">Chrome</label>
+                     <input type="radio" name="explorador" value="Safari" id="safari">
+                     <label for="safari">Safari</label>
+                     <input type="radio" name="explorador" value="Edge" id="edge">
+                     <label for="edge">Edge</label>
+                     <input type="radio" name="explorador" value="Firefox" id="firefox">
+                     <label for="firefox">Firefox</label>
+                  </div>
+                  <label for="bad-explorer">¿En cuales no quieres aparecer nunca? <em>(puedes elegir varias opciones)</em> </label>
+                  <div class="explorador-selector">
+                     <input type="checkbox" name="bad-explorer" value="bad-Chrome" id="bad-Chrome">
+                     <label for="bad-Chrome">Chrome</label>
+                     <input type="checkbox" name="bad-explorer" value="bad-Safari" id="bad-Safari">
+                     <label for="bad-Safari">Safari</label>
+                     <input type="checkbox" name="bad-explorer" value="bad-Edge" id="bad-Edge">
+                     <label for="bad-Edge">Edge</label>
+                     <input type="checkbox" name="bad-explorer" value="bad-Firefox" id="bad-Firefox">
+                     <label for="bad-Firefox">Firefox</label>
+                  </div>
+                  <label for="apodo">Escribe un mensaje de presentación <em>(max 50 caracteres)</em> </label>
+                  <input type="text" id="apodo" minlength="1" maxlength="50" />
+               </fieldset>
+               <fieldset>
+                  <legend>¿Qué buscas?</legend>
+                  <label for="caracteristicas"></label>
+                  <textarea name="caracteristicas" id="caracteristicas" rows="3" cols="60" minlength="1" maxlength="300" placeholder="Describe lo que buscas en un tag..."></textarea>
+                  <label for="frase_representativa"></label>
+                  <input type="text" id="frase_representativa" minlength="1" maxlength="100" placeholder="Una frase de película o libro que describa a tu tag ideal...">
+                  <label for="cancion_representativa"></label>
+                  <input type="text" id="cancion_representativa" minlength="1" maxlength="100" placeholder="Escríbe 3 canciones que representen a tu tag ideal...">
+                  <label for="tipo_tag">¿Qué tipo de tag buscas?</label>
+                  <input list="tag_type" name="tipo_tag" id="tipo_tag" placeholder="Nombre del videojuego">
+                  <datalist id="tag_type">
+                    <option value="1. Tags de Estructura y Organización">
+                    <option value="2. Tags de Contenido Semántico">
+                    <option value="3. Tags de Multimedia">
+                    <option value="4. Tags de Formularios e Interactividad">
+                    <option value="5. Tags de Enlaces y Navegación">
+                    <option value="6. Tags de Scripts y Recursos">
+                    <option value="7. Tags Especializados">
+                    <option value="8. Tags Obsoletos o Evitables">
+                  </datalist>
 
-<body > <!-- ya sé que este align no se  usa, pero si quito todo el css, así  se queda centrado para que podáis verlo -->
-  <header>
-    <nav class="nav-box"> <!-- si quito el css, la barra de navegación queda en 3 líneas por tenerlas separadas con div... 
-      si quisiera hacerlo todo en la misma línea quitaría los div y el h3 -->
-      <div>
-        <img class="nav-img-icon" src="/assets/imgs/icons/prof.png" alt="imágen de perfil de usuario" height="50px">
-        <button title="Nuestras etiquetas que sin cierre">Abiertas</button>
-        <button title="Las historias felices">Cerradas</button>
-        <button title="Encuentra lo que buscas">Formular</button>
-      </div>
-      <div>
-        <h3>  
-          <span>H</span>
-          <span>T</span>
-          <span>M</span>
-          <span>L</span>
-          <span>o</span>
-          <span>v</span>
-          <span>e</span> <span class="heart-span"><div class="lds-heart"><div></div></div></span></h3>
-      </div>
-      <div>
-        <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/wbr">Atención al usuario</a>
-        <a class="loader2" href="" title="Logarse / Crear perfil">I</a>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <section id="solteros-box" >
-      <section class="title-section"> 
-        <h2>Nuestros Solteros</h2>
-        <h3>Muy <em>Abiertos</em>, nuestros perfiles de oro que aún no están <em>cerrados</em>...</h3>
-      </section>
-      <section class="solteros-perfil-box">
-
-        <figure class="solteros-perfil-figure">
-          <a title="Ven a mi..." href="https://developer.mozilla.org/es/docs/Web/HTML/Element/area" target="_blank"><img src="./assets/imgs/solteros/area-1.png" alt="Soltero Area"></a>
-          <div class="solteros-profile-info">
-            <h3>Aventurero, alocado</h3>
-            <h3>Libra</h3>
-          </div>
-          <article class="solteros-profile-description">
-              <p>Le gusta definir áreas dentro de un mapa de imagen que tiene zonas cliqueables predefinidas. </p>
-              <q><em> Siempre sabré  cómo conectar contigo en los puntos correctos.</em></q> 
-              <strong> - Area</strong>
-            </p>
-          <div class="solteros-profile-description-footer">
-            <p><a href="#" style="color: blue">Regístrate </a> para poder contactar con este perfil</p>
-          </div> 
-        </article>
-        </figure>
-
-        <figure class="solteros-perfil-figure">
-          <a title="Ven a mi..." href="https://developer.mozilla.org/es/docs/Web/HTML/Element/base" target="_blank"><img src="./assets/imgs/solteros/base-1.png" alt="Soltero Base"></a>
-          <div class="solteros-profile-info">
-            <h3>Casero, confiable</h3>
-            <h3>Piscis</h3>
-          </div>
-          <article class="solteros-profile-description">
-              <p>Le gusta especificar la dirección URL base que se utilizará para todas las direcciones URL relativas contenidas dentro de un documento. Sólo puede haber uno en un documento. </p>
-              <q><em> Todo lo que construyas conmigo siempre tendrá la dirección correcta...</em></q> 
-              <strong> - Base</strong>
-            </p>
-          <div class="solteros-profile-description-footer">
-            <p><a href="#" style="color: blue">Regístrate </a> para poder contactar con este perfil</p>
-          </div> 
-        </article>
-        </figure>
-
-        <figure class="solteros-perfil-figure">
-          <a title="Ven a mi..." href="https://developer.mozilla.org/es/docs/Web/HTML/Element/hr" target="_blank"><img src="./assets/imgs/solteros/hr-1.png" alt="Soltero Hr"></a>
-          <div class="solteros-profile-info">
-            <h3>Acertiva, Amorosa</h3>
-            <h3>Géminis</h3>
-          </div>
-          <article class="solteros-profile-description">
-              <p>Representa un cambio de tema entre párrafos (por ejemplo, un cambio de escena en una historia, un cambio de tema en una sección).</p>
-              <q><em> Puedo marcar la línea que separa a todos los demás y a mí... contigo.</em></q> 
-              <strong> - Hr</strong>
-            </p>
-          <div class="solteros-profile-description-footer">
-            <p><a href="#" style="color: blue">Regístrate </a> para poder contactar con este perfil</p>
-          </div> 
-        </article>
-        </figure>
-
-        <figure class="solteros-perfil-figure">
-          <a title="Ven a mi..." href="https://developer.mozilla.org/es/docs/Web/HTML/Element/br" target="_blank"><img src="./assets/imgs/solteros/br-1.png" alt="Soltero Br"></a>
-          <div class="solteros-profile-info">
-            <h3>Introvertido</h3>
-            <h3>Leo</h3>
-          </div>
-          <article class="solteros-profile-description">
-              <p>Suele producir un salto de línea en el texto (retorno de carro). Es útil para escribir un poema o una dirección, donde la división de las líneas es significante.</p>
-              <q><em> Contigo siempre quiero saltar de línea para seguir escribiendo nuestra historia."</em></q> 
-              <strong> - Br</strong>
-            </p>
-          <div class="solteros-profile-description-footer">
-            <p><a href="#" style="color: blue">Regístrate </a> para poder contactar con este perfil</p>
-          </div> 
-        </article>
-        </figure>
-
-        <figure class="solteros-perfil-figure">
-          <a title="Ven a mi..." href="https://developer.mozilla.org/es/docs/Web/HTML/Element/col" target="_blank"><img src="./assets/imgs/solteros/col-1.png" alt="Soltero Col"></a>
-          <div class="solteros-profile-info">
-            <h3>Estóico, sensible</h3>
-            <h3>Libra</h3>
-          </div>
-          <article class="solteros-profile-description">
-              <p>Permite especificar propiedades para una columna o un grupo de ellas.</p>
-              <q><em> Me gusta organizando columnas, pero mi prioridad será siempre tenerte en la primera fila de mi corazón. </em></q> 
-              <strong> - Area</strong>
-            </p>
-          <div class="solteros-profile-description-footer">
-            <p><a href="#" style="color: blue">Regístrate </a> para poder contactar con este perfil</p>
-          </div> 
-        </article>
-        </figure>
-
-        <figure class="solteros-perfil-figure">
-          <a title="Ven a mi..." href="https://developer.mozilla.org/es/docs/Web/HTML/Element/embed" target="_blank"><img src="./assets/imgs/solteros/embed-1.png" alt="Soltero Embed"></a>
-          <div class="solteros-profile-info">
-            <h3>Cariñosa, Peligrosa</h3>
-            <h3>Acuario</h3>
-          </div>
-          <article class="solteros-profile-description">
-              <p>Le divierte incrustar contenido externo dentro de una página web. Es muy versátil y admite diversos tipos de contenido, como videos, audio, documentos...</p>
-              <q><em> Puedo integrarme perfectamente en tu vida para que seamos inseparables.</em></q> 
-              <strong> - Embed</strong>
-            </p>
-          <div class="solteros-profile-description-footer">
-            <p><a href="#" style="color: blue">Regístrate </a> para poder contactar con este perfil</p>
-          </div> 
-        </article>
-        </figure>
-
-        <figure class="solteros-perfil-figure">
-          <a title="Ven a mi..." href="https://developer.mozilla.org/es/docs/Web/HTML/Element/img" target="_blank"><img src="./assets/imgs/solteros/img-1.png" alt="Soltero Img"></a>
-          <div class="solteros-profile-info">
-            <h3>Creativa, Impactante</h3>
-            <h3>Tauro</h3>
-          </div>
-          <article class="solteros-profile-description">
-              <p>Representa una imagen en el documento.</p>
-              <q><em> Muestro lo que los demás quieren ver, pero contigo sería 100% auténtico.</em></q> 
-              <strong> - Img</strong>
-            </p>
-          <div class="solteros-profile-description-footer">
-            <p><a href="#" style="color: blue">Regístrate </a> para poder contactar con este perfil</p>
-          </div> 
-        </article>
-        </figure>
-
-        <figure class="solteros-perfil-figure">
-          <a title="Ven a mi..." href="https://developer.mozilla.org/es/docs/Web/HTML/Element/input" target="_blank"><img src="./assets/imgs/solteros/input-1.png" alt="Soltero Input"></a>
-          <div class="solteros-profile-info">
-            <h3>Aventurero, Alocado</h3>
-            <h3>Libra</h3>
-          </div>
-          <article class="solteros-profile-description">
-              <p>Le gusta crear controles interactivos para formularios basados en la web con el fin de recibir datos del usuario.</p>
-              <q><em> Todo lo que quiero recibir son tus datos para conocerte mejor.</em></q> 
-              <strong> - Input</strong>
-            </p>
-          <div class="solteros-profile-description-footer">
-            <p><a href="#" style="color: blue">Regístrate </a> para poder contactar con este perfil</p>
-          </div> 
-        </article>
-        </figure>
-
-        <figure class="solteros-perfil-figure">
-          <a title="Ven a mi..." href="https://developer.mozilla.org/es/docs/Web/HTML/Element/link" target="_blank"><img src="./assets/imgs/solteros/link-1.png" alt="Soltero link"></a>
-          <div class="solteros-profile-info">
-            <h3>Apegada, Mente abierta</h3>
-            <h3>Cancer</h3>
-          </div>
-          <article class="solteros-profile-description">
-              <p> Especifica la relación entre el documento actual y un recurso externo. Los usos posibles de este elemento incluyen la definición de un marco relacional para navegación.</p>
-              <q><em> Quiero ser el hipervínculo que conecte nuestros corazones.</em></q> 
-              <strong> - Link</strong>
-            </p>
-          <div class="solteros-profile-description-footer">
-            <p><a href="#" style="color: blue">Regístrate </a> para poder contactar con este perfil</p>
-          </div> 
-        </article>
-        </figure>
-
-        <figure class="solteros-perfil-figure">
-          <a title="Ven a mi..." href="https://developer.mozilla.org/es/docs/Web/HTML/Element/meta" target="_blank"><img src="./assets/imgs/solteros/meta-1.png" alt="Soltero meta"></a>
-          <div class="solteros-profile-info">
-            <h3>Aventurero, Alocado</h3>
-            <h3>Libra</h3>
-          </div>
-          <article class="solteros-profile-description">
-              <p> Le emociona aportar información sobre el documento..</p>
-              <q><em> Quiero entenderte bien, a nivel profundo, que me muestres todos tus metadatos emocionales.</em></q> 
-              <strong> - Meta</strong>
-            </p>
-          <div class="solteros-profile-description-footer">
-            <p><a href="#" style="color: blue">Regístrate </a> para poder contactar con este perfil</p>
-          </div> 
-        </article>
-        </figure>
-
-        <figure class="solteros-perfil-figure">
-          <a title="Ven a mi..." href="https://developer.mozilla.org/es/docs/Web/HTML/Element/source" target="_blank"><img src="./assets/imgs/solteros/source-1.png" alt="Soltero Source"></a>
-          <div class="solteros-profile-info">
-            <h3>Inteligente, Conectada</h3>
-            <h3>Capricornio</h3>
-          </div>
-          <article class="solteros-profile-description">
-              <p>Especifica recursos de medios múltiples para los elementos picture, audio, o video. Es un elemento vacío.</p>
-              <q><em> Todo lo que comparto contigo viene directamente de mi código fuente.</em></q> 
-              <strong> - Source</strong>
-            </p>
-          <div class="solteros-profile-description-footer">
-            <p><a href="#" style="color: blue">Regístrate </a> para poder contactar con este perfil</p>
-          </div> 
-        </article>
-        </figure>
-
-        <figure class="solteros-perfil-figure">
-          <a title="Ven a mi..." href="https://developer.mozilla.org/es/docs/Web/HTML/Element/track" target="_blank"><img src="./assets/imgs/solteros/track-1.png" alt="Soltero Track"></a>
-          <div class="solteros-profile-info">
-            <h3>Estudiante, Deportista</h3>
-            <h3>Sagitario</h3>
-          </div>
-          <article class="solteros-profile-description">
-              <p>Es un hijo de los elementos multimedia, audio y video. Le permite especificar pistas de texto cronometradas (o datos basados en el tiempo), por ejemplo, para manejar subtítulos automáticamente. </p>
-              <q><em> Quiero sincronizar cada uno de mis pasos con los tuyos."</em></q> 
-              <strong> - Track</strong>
-            </p>
-          <div class="solteros-profile-description-footer">
-            <p><a href="#" style="color: blue">Regístrate </a> para poder contactar con este perfil</p>
-          </div> 
-        </article>
-        </figure>
-
-        <figure class="solteros-perfil-figure">
-          <a title="Ven a mi..." href="https://developer.mozilla.org/es/docs/Web/HTML/Element/wbr" target="_blank"><img src="./assets/imgs/solteros/wbr-1.png" alt="Soltero Wbr"></a>
-          <div class="solteros-profile-info">
-            <h3>Aventurero, Alocado</h3>
-            <h3>Libra</h3>
-          </div>
-          <article class="solteros-profile-description">
-              <p> Representa una posición dentro del texto donde el explorador puede opcionalmente saltar una línea , aunque sus reglas de salto de línea de otra manera no crearían un salto en esa posición </p>
-              <q><em> Siempre encontraré el lugar perfecto para pausar y admirarte.</em></q> 
-              <strong> - Wbr</strong>
-            </p>
-          <div class="solteros-profile-description-footer">
-            <p><a href="#" style="color: blue">Regístrate </a> para poder contactar con este perfil</p>
-          </div> 
-        </article>
-
-        </figure>
-        
-      </section>
-    </section>
-    <section id="historias-felices-box">
-      <section class="title-section"> 
-        <h2>Nuestras historias de éxito</h2>
-        <h3>Parejas inseparables que nos alegra ver todavía juntas. Nos sentimos orgullosos de su éxito conjunto</h3>
-        <h3>y que hayan encontrado su media naranja a través de nosotros</h3>
-      </section>
-      <section id="historias-felices-articles">
-      <article class="parejas-figure">
-        <figure>
-          <a  title="Ven a mi..." href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/thead" target="_blank">
-            <img class="blob" src="./assets/imgs/parejas/pareja-1.png" alt="Soltero Area">
-          </a>
-        </figure>
-        <section class="parejas-info">
-          <header>
-            <h2>thead y tbody</h2>
-            <p>Pareja estable desde <time datetime="1997-12-18"><strong>18 de diciembre de 1997</strong></time></p>
-          </header>
-          <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tbody">
-            <q>
-              Los dos nos encontrábamos en la misma situación: caos, desorden, desesperación, falta de estructura en nuestra vida. 
-              Yo lo había dejado con mi pareja <mark>tfoot</mark> porque no me aportaba ninguna conclusión, y tbody estaba en un sinpás con <mark>caption</mark>. 
-              Así que decidimos probar suerte y... aquí estamos. <strong>Fuertes como columnas</strong>.
-            </q>
-          </blockquote>
-          <footer>
-            <p>
-              Nos cuenta con amor <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tbody" target="_blank">thead</a>
-            </p>
-          </footer>
-        </section>
-      </article>
-
-      <article class="parejas-figure">
-        <figure>
-          <a title="Conoce a estos amigos" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tr" target="_blank">
-            <img class="blob" src="./assets/imgs/parejas/pareja-2.png" alt="Imagen de tres amigos">
-          </a>
-        </figure>
-        <section class="parejas-info">
-          <header>
-            <h2>tr, th y td</h2>
-            <p>Amigos inseparables desde <time datetime="1997-12-18"><strong>18 de diciembre de 1997</strong></time></p>
-          </header>
-          <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tr">
-            <q>
-              Somos el equipo perfecto. Yo, <mark>tr</mark>, me encargo de mantener todo en orden y organizar las filas. 
-              <mark>th</mark> siempre está ahí para destacar lo importante, y <mark>td</mark> da forma al contenido. 
-              Cada uno tiene su rol, pero juntos hacemos que las tablas cobren vida.
-              <strong>¡La amistad más alineada que existe!</strong>
-            </q>
-          </blockquote>
-          <footer>
-            <p>
-              Contado con entusiasmo por <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tr" target="_blank">tr</a>
-            </p>
-          </footer>
-        </section>
-      </article>
-      
-      <article class="parejas-figure">
-        <figure>
-          <a title="Ven a mi..." href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure" target="_blank">
-            <img class="blob" src="./assets/imgs/parejas/pareja-3.png" alt="Figura de pareja cocinando">
-          </a>
-        </figure>
-        <section class="parejas-info">
-          <header>
-            <h2>figure y figcaption</h2>
-            <p>Pareja inseparable desde <time datetime="2014-10-28"><strong>28 de octubre de 2014</strong></time></p>
-          </header>
-          <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure">
-            <q>
-              Cuando conocí a <mark>figcaption</mark>, todo cobró sentido. 
-              Antes me sentía incompleto, como si mi propósito no estuviera claro. 
-              Pero entonces apareció, con su habilidad para describir cualquier imagen, 
-              y juntos creamos historias completas, perfectas para el mundo del diseño y la accesibilidad. 
-              Nuestra pasión por cocinar nació el día en que decidimos combinar nuestras fuerzas en la cocina. 
-              Ahora somos el equipo ideal: yo doy la imagen y ella el contexto. <strong>Somos el plato perfecto.</strong>
-            </q>
-          </blockquote>
-          <footer>
-            <p>
-              <cite>
-                Nos cuenta su historia <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure" target="_blank">figure</a>
-              </cite>
-            </p>
-          </footer>
-        </section>
-      </article>
-            
-      <article class="parejas-figure">
-        <figure>
-          <a title="Ven a conocerlos" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label" target="_blank">
-            <img class="blob" src="./assets/imgs/parejas/pareja-4.png" alt="Pareja viendo series y películas">
-          </a>
-        </figure>
-        <section class="parejas-info">
-          <header>
-            <h2>input y label</h2>
-            <p>Una pareja unida desde <time datetime="1999-05-01"><strong>1 de mayo de 1999</strong></time></p>
-          </header>
-          <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label">
-            <q>
-              Nos encanta pasar las tardes juntos. <mark>label</mark> siempre me guía y me muestra qué hacer, 
-              mientras yo, <mark>input</mark>, hago el trabajo. Ya sea rellenando formularios o eligiendo qué película ver, 
-              somos el dúo dinámico. ¡Nada nos detiene cuando estamos sincronizados!
-            </q>
-          </blockquote>
-          <footer>
-            <p>
-              Compartido con cariño por <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label" target="_blank">label</a>
-            </p>
-          </footer>
-        </section>
-      </article>
-      
-      <article class="parejas-figure">
-        <figure>
-          <a title="Descubre a esta familia" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio" target="_blank">
-            <img class="blob" src="./assets/imgs/parejas/pareja-5.png" alt="Familia en la naturaleza">
-          </a>
-        </figure>
-        <section class="parejas-info">
-          <header>
-            <h2>audio y video, junto a su hijo track</h2>
-            <p>Familia unida desde <time datetime="2014-10-28"><strong>28 de octubre de 2014</strong></time></p>
-          </header>
-          <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio">
-            <q>
-              Nuestra vida siempre ha estado llena de aventuras. 
-              <mark>audio</mark> aporta la melodía y <mark>video</mark> la imagen. Y ahora, con nuestro hijo <mark>track</mark>, 
-              nos encanta viajar por la naturaleza, descubriendo sonidos y paisajes nuevos. <strong>¡Somos el equipo perfecto!</strong>
-            </q>
-          </blockquote>
-          <footer>
-            <p>
-              Contado por <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio" target="_blank">audio</a>
-            </p>
-          </footer>
-        </section>
-      </article>
-      <article class="parejas-figure">
-        <figure>
-          <a title="Explora con ellos" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a" target="_blank">
-            <img class="blob" src="./assets/imgs/parejas/pareja-6.png" alt="Dos amigos explorando la naturaleza">
-          </a>
-        </figure>
-        <section class="parejas-info">
-          <header>
-            <h2>a e img</h2>
-            <p>Amigos aventureros desde <time datetime="1999-12-24"><strong>24 de diciembre de 1999</strong></time></p>
-          </header>
-          <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a">
-            <q>
-              Yo, <mark>a</mark>, siempre busco nuevos destinos. 
-              Pero no hay aventura completa sin <mark>img</mark>, quien captura cada momento con imágenes increíbles. 
-              Nos encanta explorar la naturaleza y compartir nuestras experiencias con todos.
-              <strong>¡La amistad perfecta para cada viaje!</strong>
-            </q>
-          </blockquote>
-          <footer>
-            <p>
-              Contado con emoción por <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a" target="_blank">a</a>
-            </p>
-          </footer>
-        </section>
-      </article>
-      
-      <article class="parejas-figure">
-        <figure>
-          <a title="Conoce su historia" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote" target="_blank">
-            <img class="blob" src="./assets/imgs/parejas/pareja-7.png" alt="Pareja literaria escribiendo una cita">
-          </a>
-        </figure>
-        <section class="parejas-info">
-          <header>
-            <h2>blockquote y cite</h2>
-            <p>Pareja literaria desde <time datetime="1999-12-24"><strong>24 de diciembre de 1999</strong></time></p>
-          </header>
-          <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite">
-            <q>
-              Desde el momento en que nos conocimos, hemos trabajado juntos para capturar ideas. 
-              Yo, <mark>blockquote</mark>, me encargo de dar espacio a las citas largas, 
-              pero <mark>cite</mark> siempre sabe cómo atribuirlas y darles crédito a los demás. 
-              ¡Nuestro amor por las palabras nunca terminará!
-            </q>
-          </blockquote>
-          <footer>
-            <p>
-              Narrado con pasión por <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote" target="_blank">blockquote</a>
-            </p>
-          </footer>
-        </section>
-      </article>
-      <article class="parejas-figure">
-        <figure>
-          <a title="Descubre a esta pareja" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details" target="_blank">
-            <img class="blob" src="./assets/imgs/parejas/pareja-8.png" alt="Pareja exploradora de secretos">
-          </a>
-        </figure>
-        <section class="parejas-info">
-          <header>
-            <h2>details y summary</h2>
-            <p>Pareja intrigante desde <time datetime="2010-12-13"><strong>13 de diciembre de 2010</strong></time></p>
-          </header>
-          <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details">
-            <q>
-              Nuestra relación está basada en la curiosidad y la intriga. 
-              Yo, <mark>details</mark>, guardo los secretos, pero <mark>summary</mark> siempre está ahí para dar una pista. 
-              Somos inseparables porque juntos creamos una narrativa única: 
-              primero lo que se ve, y luego, lo que se descubre. ¡Nos encanta sorprender!
-            </q>
-          </blockquote>
-          <footer>
-            <p>
-              Contado con emoción por <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details" target="_blank">details</a>
-            </p>
-          </footer>
-        </section>
-      </article>
-      <article class="parejas-figure">
-        <figure>
-          <a title="Conoce a esta familia única" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hgroup" target="_blank">
-            <img class="blob" src="./assets/imgs/parejas//pareja-9.png" alt="Familia de hgroup y encabezados">
-          </a>
-        </figure>
-        <section class="parejas-info">
-          <header>
-            <h2>hgroup y sus hijos: h1, h2, h3, h4, h5 y h6</h2>
-            <p>Familia adoptiva unida desde <time datetime="2014-10-28"><strong>28 de octubre de 2014</strong></time></p>
-          </header>
-          <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hgroup">
-            <q>
-              Yo, <mark>hgroup</mark>, nunca pensé que tendría una familia tan diversa. 
-              Adopté a mis seis hijos, <mark>h1</mark>, <mark>h2</mark>, <mark>h3</mark>, <mark>h4</mark>, <mark>h5</mark>, y <mark>h6</mark>, 
-              cada uno con una personalidad única. Desde el fuerte y dominante <mark>h1</mark> hasta el tranquilo y pequeño <mark>h6</mark>, 
-              todos tienen un lugar especial en mi vida. Aunque sean distintos, siempre trabajamos juntos para que cada encabezado cuente una historia completa.
-            </q>
-          </blockquote>
-          <footer>
-            <p>
-              Compartido con cariño por <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hgroup" target="_blank">hgroup</a>
-            </p>
-          </footer>
-        </section>
-      </article>
-      <article class="parejas-figure">
-        <figure>
-          <a title="Explora esta dinámica lista" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul" target="_blank">
-            <img class="blob" src="./assets/imgs/parejas/pareja-10.png" alt="Lista y sus elementos">
-          </a>
-        </figure>
-        <section class="parejas-info">
-          <header>
-            <h2>ul y sus li</h2>
-            <p>Compañeros inseparables desde <time datetime="1997-12-18"><strong>18 de diciembre de 1997</strong></time></p>
-          </header>
-          <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul">
-            <q>
-              Como <mark>ul</mark>, siempre me ha encantado organizar y dar estructura. 
-              Mis compañeros <mark>li</mark>, aunque son únicos y tienen sus propios estilos, siempre se alinean conmigo para formar una lista perfecta. 
-              Ya sea una receta, una lista de tareas o una colección de ideas, juntos creamos orden en el caos.
-            </q>
-          </blockquote>
-          <footer>
-            <p>
-              Narrado por <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul" target="_blank">ul</a>
-            </p>
-          </footer>
-        </section>
-      </article>
-      
-    </section>
-    </section>
-    <section id="formularios-box">
-      <form action="registro_usuario.php" method="post">
-        <fieldset>
-          <legend>Descríbete</legend>
-            <label for="apodo">¿Cual es tu apodo favorito?</label>
-            <input type="text" id="apodo" />
-            <label for="otro_tag" >Si fueras otro tag, ¿cuál te gustaría ser y por qué?</label>
-            <input type="text" id="otro_tag" minlength="1" maxlength="50"/>
-            <label for="tiempo_libre">¿Qué te gusta hacer en tu tiempo libre?</label>
-            <textarea type="text" id="tiempo_libre" rows="4" cols="60" minlength="1" maxlength="400"> </textarea>
-            <label for="color_favorito" >¿Cual es el color que mejor te representa?</label>
-            <input type="color" id="color_favorito" value="#FF0000">
-            <label for="tags_pasados" >¿Cual consideras que fue el tag que más te marcó?</label>
-            <select id="tags_pasados" required >
-              <option value="ninguno" disabled selected>Selecciona una opción</option>
-              <option value="label">Label</option>
-              <option value="Section">Section</option>
-              <option value="div">Div</option>
-              <option value="label">Label</option>
-              <option value="aside">Aside</option>
-              <option value="label">Label</option>
-            </select>
-
-              <label for="explorador">¿En cual explorador te gusta aparecer con más frecuencia? <em>(Elige una opción)</em> </label>
-              <div class="explorador-selector">
-                <input type="radio" name="explorador" value="Chrome" id="chrome">
-                <label for="chrome">Chrome</label>
-                <input type="radio" name="explorador" value="Safari" id="safari">
-                <label for="safari">Safari</label>
-                <input type="radio" name="explorador" value="Edge" id="edge">
-                <label for="edge">Edge</label>
-                <input type="radio" name="explorador" value="Firefox" id="firefox">
-                <label for="firefox">Firefox</label>
-              </div>
-            
-              <label for="bad-explorer">¿En cuales no quieres aparecer nunca? <em>(puedes elegir varias opciones)</em> </label>
-              <div class="explorador-selector">
-                <input type="checkbox" name="bad-explorer" value="bad-Chrome" id="bad-Chrome">
-                <label for="bad-Chrome">Chrome</label>
-                <input type="checkbox" name="bad-explorer" value="bad-Safari" id="bad-Safari">
-                <label for="bad-Safari">Safari</label>
-                <input type="checkbox" name="bad-explorer" value="bad-Edge" id="bad-Edge">
-                <label for="bad-Edge">Edge</label>
-                <input type="checkbox" name="bad-explorer" value="bad-Firefox" id="bad-Firefox">
-                <label for="bad-Firefox">Firefox</label>
-              </div>
-              <label for="apodo">Escribe un mensaje de presentación <em>(max 50 caracteres)</em> </label>
-              <input type="text" id="apodo" minlength="1" maxlength="50" />
-        </fieldset>
-        
-        <fieldset>
-          <legend>¿Qué buscas?</legend>
-          <label for="caracteristicas"></label>
-            <textarea name="caracteristicas" id="caracteristicas" rows="3" cols="60" placeholder="Describe lo que buscas en un tag..."></textarea>
-          <label for="confirmar_contrasena"></label>
-          <input type="text" id="confirmar_contrasena" placeholder="Cuál sería tu fase de presentación?">
-        </fieldset>
-
-        <fieldset>
-          <legend>Propuesta...</legend>
-          <label for="caracteristicas"></label>
-            <textarea name="caracteristicas" id="caracteristicas" rows="3" cols="60" placeholder="Describe lo que buscas en un tag..."></textarea>
-          <label for="confirmar_contrasena"></label>
-          <input type="text" id="confirmar_contrasena" placeholder="Cuál sería tu fase de presentación?">
-        </fieldset>
-        <input type="submit" value="Registrar formulario">
-        
-      </form>
-      
-    </section>
-  </main>
-  <footer></footer>
-
-</body>
+               </fieldset>
+               <fieldset>
+                  <legend>Propuesta...</legend>
+                  <label for="tag-cita">¿Dónde te gustaría tener la primera cita? <em>(puedes elegir varias opciones)</em></label>
+                  <section class="cita-box">
+                     <div class="explorador-selector">
+                        <input type="checkbox" name="tag-cita" value="parque-css" id="parque-css">
+                        <label for="parque-css">Un parque diseñado con CSS</label>
+                        <input type="checkbox" name="tag-cita" value="cine-html5" id="cine-html5">
+                        <label for="cine-html5">Un cine que proyecta etiquetas HTML5</label>
+                     </div>
+                     <div class="explorador-selector">
+                        <input type="checkbox" name="tag-cita" value="museo-svg" id="museo-svg">
+                        <label for="museo-svg">Un museo de arte SVG</label>
+                        <input type="checkbox" name="tag-cita" value="biblioteca-markdown" id="biblioteca-markdown">
+                        <label for="biblioteca-markdown">Una biblioteca de Markdown</label>
+                     </div>
+                     <div class="explorador-selector">
+                        <input type="checkbox" name="tag-cita" value="cafe-codepen" id="cafe-codepen">
+                        <label for="cafe-codepen">Un café en CodePen</label>
+                        <input type="checkbox" name="tag-cita" value="concierto-javascript" id="concierto-javascript">
+                        <label for="concierto-javascript">Un concierto de funciones JavaScript</label>
+                     </div>
+                     <div class="explorador-selector">
+                        <input type="checkbox" name="tag-cita" value="playa-responsive" id="playa-responsive">
+                        <label for="playa-responsive">Una playa con diseño responsive</label>
+                        <input type="checkbox" name="tag-cita" value="montana-api" id="montana-api">
+                        <label for="montana-api">Una montaña llena de APIs</label>
+                     </div>
+                  </section>
+               </fieldset>
+               <input type="submit" value="Registrar formulario">
+            </form>
+         </section>
+      </main>
+      <footer></footer>
+   </body>
 </html>
