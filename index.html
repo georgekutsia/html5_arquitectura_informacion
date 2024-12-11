@@ -14,12 +14,12 @@
   <title>HTML love place</title>
 </head>
 
-<body align="center"> <!-- ya sé que este align no se  usa, pero si quito todo el css, así  se queda centrado para que podáis verlo -->
+<body > <!-- ya sé que este align no se  usa, pero si quito todo el css, así  se queda centrado para que podáis verlo -->
   <header>
     <nav class="nav-box"> <!-- si quito el css, la barra de navegación queda en 3 líneas por tenerlas separadas con div... 
       si quisiera hacerlo todo en la misma línea quitaría los div y el h3 -->
       <div>
-        <img class="nav-img-icon" src="/assets/imgs/icons/prof.png" alt="icono de logo love place" height="50px">
+        <img class="nav-img-icon" src="/assets/imgs/icons/prof.png" alt="imágen de perfil de usuario" height="50px">
         <button title="Nuestras etiquetas que sin cierre">Abiertas</button>
         <button title="Las historias felices">Cerradas</button>
         <button title="Encuentra lo que buscas">Formular</button>
@@ -549,15 +549,74 @@
     </section>
     </section>
     <section id="formularios-box">
-      <form action="buscar_afines.php" method="post" class="form-buscar-afines">
-          <fieldset>
-            <legend>Descríbete</legend>
-                <label for="description"> Descríbete</label>
-                <textarea name="description" id="description"></textarea>
-          </fieldset>
-            <legend>¿Qué buscas?</legend>
-          </fieldset>
+      <form action="registro_usuario.php" method="post">
+        <fieldset>
+          <legend>Descríbete</legend>
+            <label for="apodo">¿Cual es tu apodo favorito?</label>
+            <input type="text" id="apodo" />
+            <label for="otro_tag" >Si fueras otro tag, ¿cuál te gustaría ser y por qué?</label>
+            <input type="text" id="otro_tag" minlength="1" maxlength="50"/>
+            <label for="tiempo_libre">¿Qué te gusta hacer en tu tiempo libre?</label>
+            <textarea type="text" id="tiempo_libre" rows="4" cols="60" minlength="1" maxlength="400"> </textarea>
+            <label for="color_favorito" >¿Cual es el color que mejor te representa?</label>
+            <input type="color" id="color_favorito" value="#FF0000">
+            <label for="tags_pasados" >¿Cual consideras que fue el tag que más te marcó?</label>
+            <select id="tags_pasados" required >
+              <option value="ninguno" disabled selected>Selecciona una opción</option>
+              <option value="label">Label</option>
+              <option value="Section">Section</option>
+              <option value="div">Div</option>
+              <option value="label">Label</option>
+              <option value="aside">Aside</option>
+              <option value="label">Label</option>
+            </select>
+
+              <label for="explorador">¿En cual explorador te gusta aparecer con más frecuencia? <em>(Elige una opción)</em> </label>
+              <div class="explorador-selector">
+                <input type="radio" name="explorador" value="Chrome" id="chrome">
+                <label for="chrome">Chrome</label>
+                <input type="radio" name="explorador" value="Safari" id="safari">
+                <label for="safari">Safari</label>
+                <input type="radio" name="explorador" value="Edge" id="edge">
+                <label for="edge">Edge</label>
+                <input type="radio" name="explorador" value="Firefox" id="firefox">
+                <label for="firefox">Firefox</label>
+              </div>
+            
+              <label for="bad-explorer">¿En cuales no quieres aparecer nunca? <em>(puedes elegir varias opciones)</em> </label>
+              <div class="explorador-selector">
+                <input type="checkbox" name="bad-explorer" value="bad-Chrome" id="bad-Chrome">
+                <label for="bad-Chrome">Chrome</label>
+                <input type="checkbox" name="bad-explorer" value="bad-Safari" id="bad-Safari">
+                <label for="bad-Safari">Safari</label>
+                <input type="checkbox" name="bad-explorer" value="bad-Edge" id="bad-Edge">
+                <label for="bad-Edge">Edge</label>
+                <input type="checkbox" name="bad-explorer" value="bad-Firefox" id="bad-Firefox">
+                <label for="bad-Firefox">Firefox</label>
+              </div>
+              <label for="apodo">Escribe un mensaje de presentación <em>(max 50 caracteres)</em> </label>
+              <input type="text" id="apodo" minlength="1" maxlength="50" />
+        </fieldset>
+        
+        <fieldset>
+          <legend>¿Qué buscas?</legend>
+          <label for="caracteristicas"></label>
+            <textarea name="caracteristicas" id="caracteristicas" rows="3" cols="60" placeholder="Describe lo que buscas en un tag..."></textarea>
+          <label for="confirmar_contrasena"></label>
+          <input type="text" id="confirmar_contrasena" placeholder="Cuál sería tu fase de presentación?">
+        </fieldset>
+
+        <fieldset>
+          <legend>Propuesta...</legend>
+          <label for="caracteristicas"></label>
+            <textarea name="caracteristicas" id="caracteristicas" rows="3" cols="60" placeholder="Describe lo que buscas en un tag..."></textarea>
+          <label for="confirmar_contrasena"></label>
+          <input type="text" id="confirmar_contrasena" placeholder="Cuál sería tu fase de presentación?">
+        </fieldset>
+        <input type="submit" value="Registrar formulario">
+        
       </form>
+      
     </section>
   </main>
   <footer></footer>
