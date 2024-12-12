@@ -588,8 +588,8 @@
                   <input type="text" id="frase_representativa" minlength="1" maxlength="100" placeholder="Una frase de película o libro que describa a tu tag ideal...">
                   <label for="cancion_representativa"></label>
                   <input type="text" id="cancion_representativa" minlength="1" maxlength="100" placeholder="Escríbe 3 canciones que representen a tu tag ideal...">
-                  <label for="tipo_tag">¿Qué tipo de tag buscas?</label>
-                  <input list="tag_type" name="tipo_tag" id="tipo_tag" placeholder="Nombre del videojuego">
+                  <label for="tipo_tag"></label>
+                  <input list="tag_type" name="tipo_tag" id="tipo_tag" placeholder="Deportes que te gustaría practicar con tu tag..">
                   <datalist id="tag_type">
                     <option value="1. Tags de Estructura y Organización">
                     <option value="2. Tags de Contenido Semántico">
@@ -600,6 +600,79 @@
                     <option value="7. Tags Especializados">
                     <option value="8. Tags Obsoletos o Evitables">
                   </datalist>
+
+                  <label for="rating_adventure">¿Cuánto debe amar <em>(tu tag ideal)</em> aventuras fuera de browser?</label>
+                  <section class="star-rating">
+                    <input type="radio" name="rating_adventure" id="rating_adventure1" value="1">
+                    <label for="rating_adventure1">❤️</label>
+                    <input type="radio" name="rating_adventure" id="rating_adventure2" value="2">
+                    <label for="rating_adventure2">❤️❤️</label>
+                    <input type="radio" name="rating_adventure" id="rating_adventure3" value="3">
+                    <label for="rating_adventure3">❤️❤️❤️</label>
+                    <input type="radio" name="rating_adventure" id="rating_adventure4" value="4">
+                    <label for="rating_adventure4">❤️❤️❤️❤️</label>
+                    <input type="radio" name="rating_adventure" id="rating_adventure5" value="5">
+                    <label for="rating_adventure5">❤️❤️❤️❤️❤️</label>
+                  </section>
+
+                  <label for="rating_sport">¿Cuánto debe amar <em>(tu tag ideal)</em> hacer deporte a diario?</label>
+                  <section class="star-rating">
+                    <input type="radio" name="rating_sport" id="rating_sport1" value="1">
+                    <label for="rating_sport1">❤️</label>
+                    <input type="radio" name="rating_sport" id="rating_sport2" value="2">
+                    <label for="rating_sport2">❤️❤️</label>
+                    <input type="radio" name="rating_sport" id="rating_sport3" value="3">
+                    <label for="rating_sport3">❤️❤️❤️</label>
+                    <input type="radio" name="rating_sport" id="rating_sport4" value="4">
+                    <label for="rating_sport4">❤️❤️❤️❤️</label>
+                    <input type="radio" name="rating_sport" id="rating_sport5" value="5">
+                    <label for="rating_sport5">❤️❤️❤️❤️❤️</label>
+                  </section>
+                  
+                  <label for="rating_localhost">¿Cuánto debe amar <em>(tu tag ideal)</em> hacer vida en localhost?</label>
+                  <section class="star-rating">
+                    <input type="radio" name="rating_localhost" id="rating_localhost1" value="1">
+                    <label for="rating_localhost1">❤️</label>
+                    <input type="radio" name="rating_localhost" id="rating_localhost2" value="2">
+                    <label for="rating_localhost2">❤️❤️</label>
+                    <input type="radio" name="rating_localhost" id="rating_localhost3" value="3">
+                    <label for="rating_localhost3">❤️❤️❤️</label>
+                    <input type="radio" name="rating_localhost" id="rating_localhost4" value="4">
+                    <label for="rating_localhost4">❤️❤️❤️❤️</label>
+                    <input type="radio" name="rating_localhost" id="rating_localhost5" value="5">
+                    <label for="rating_localhost5">❤️❤️❤️❤️❤️</label>
+                  </section>
+                  
+                  <label for="rating_masaje">¿Cómo valorarías masaje en los pies?</label>
+                  <section class="star-rating">
+                    <input type="radio" name="rating_masaje" id="rating_masaje1" value="1">
+                    <label for="rating_masaje1">⭐</label>
+                    <input type="radio" name="rating_masaje" id="rating_masaje2" value="2">
+                    <label for="rating_masaje2">⭐⭐</label>
+                    <input type="radio" name="rating_masaje" id="rating_masaje3" value="3">
+                    <label for="rating_masaje3">⭐⭐⭐</label>
+                    <input type="radio" name="rating_masaje" id="rating_masaje4" value="4">
+                    <label for="rating_masaje4">⭐⭐⭐⭐</label>
+                    <input type="radio" name="rating_masaje" id="rating_masaje5" value="5">
+                    <label for="rating_masaje5">⭐⭐⭐⭐⭐</label>
+                  </section>
+                  
+                  
+                  <label for="rating_abierto">¿Quieres que esté abierto a relaciones con otros tags?</label>
+                  <section class="star-rating">
+                    <input type="radio" name="rating_abierto" id="rating_abierto1" value="1">
+                    <label for="rating_abierto1">⭐</label>
+                    <input type="radio" name="rating_abierto" id="rating_abierto2" value="2">
+                    <label for="rating_abierto2">⭐⭐</label>
+                    <input type="radio" name="rating_abierto" id="rating_abierto3" value="3">
+                    <label for="rating_abierto3">⭐⭐⭐</label>
+                    <input type="radio" name="rating_abierto" id="rating_abierto4" value="4">
+                    <label for="rating_abierto4">⭐⭐⭐⭐</label>
+                    <input type="radio" name="rating_abierto" id="rating_abierto5" value="5">
+                    <label for="rating_abierto5">⭐⭐⭐⭐⭐</label>
+                  </section>
+                  
+                  
 
                </fieldset>
                <fieldset>
@@ -631,8 +704,13 @@
                         <label for="montana-api">Una montaña llena de APIs</label>
                      </div>
                   </section>
+                  <label for="disfraz">¿Nos disfrazamos?</label>
+                  <textarea name="disfraz" id="disfraz" placeholder="Dinos si quieres que os conozcáis distrazados de otros tags.." rows="5" cols="60"></textarea>
                </fieldset>
-               <input type="submit" value="Registrar formulario">
+               <footer>
+                 <input type="submit" value="Registrar formulario">
+                 <input type="reset" value="Reiniciar formulario">
+                </footer>
             </form>
          </section>
       </main>
