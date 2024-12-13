@@ -1,9 +1,10 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: rgba(246, 205, 251, 0.353);
 }
+
 body {
+  background-color: rgba(246, 205, 251, 0.353);
   margin: 2vh 10vw;
   padding: 0px;
 }
@@ -422,4 +423,36 @@ font-size: calc(12px + 0.3vw);
 
 #login-box form input:hover{
   background-color: rgb(148, 148, 255);
+}
+
+
+#footer{
+  position: fixed;
+  bottom: 0;
+  width: 80%;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 10px;
+  height: 10px;
+  border: 1px solid black;
+  border-radius: 50px 50px 0px 0px;
+  cursor:ns-resize;
+  transition: 0.4s ease-in-out;
+  transition-delay: 1s;
+background-color: #007bff4d;
+}
+
+footer a img{
+  width: 30px;
+  margin-right: 20px;
+  
+}
+footer a {
+  width: 0px;
+}
+#footer:hover{
+  height: 140px;
+background-color: #fff8ce;
+
+  transition-delay: 0s;
 }
