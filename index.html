@@ -42,8 +42,8 @@
                </h3>
             </div>
             <div>
-               <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/wbr">Atención al usuario</a>
-               <a class="loader2" href="" title="Logarse / Crear perfil">I</a>
+               <a href="https://george-kutsia-portfolio.netlify.app/">Atención al usuario</a>
+               <button class="loader2" href="" title="Logarse / Crear perfil">I</button>
             </div>
          </nav>
       </header>
@@ -274,7 +274,7 @@
                <article class="parejas-figure">
                   <figure>
                      <a  title="Ven a mi..." href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/thead" target="_blank">
-                     <img class="blob" src="./assets/imgs/parejas/pareja-1.png" alt="Soltero Area">
+                     <img class="blob" src="./assets/imgs/parejas/pareja-1.png" alt="pareja feliz thead y tbody en una discoteca">
                      </a>
                   </figure>
                   <section class="parejas-info">
@@ -299,7 +299,7 @@
                <article class="parejas-figure">
                   <figure>
                      <a title="Conoce a estos amigos" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tr" target="_blank">
-                     <img class="blob" src="./assets/imgs/parejas/pareja-2.png" alt="Imagen de tres amigos">
+                     <img class="blob" src="./assets/imgs/parejas/pareja-2.png" alt="Imagen de tres amigos tr, th y td en la playa">
                      </a>
                   </figure>
                   <section class="parejas-info">
@@ -325,7 +325,7 @@
                <article class="parejas-figure">
                   <figure>
                      <a title="Ven a mi..." href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure" target="_blank">
-                     <img class="blob" src="./assets/imgs/parejas/pareja-3.png" alt="Figura de pareja cocinando">
+                     <img class="blob" src="./assets/imgs/parejas/pareja-3.png" alt="figure y figcaption cocinando">
                      </a>
                   </figure>
                   <section class="parejas-info">
@@ -355,7 +355,7 @@
                <article class="parejas-figure">
                   <figure>
                      <a title="Ven a conocerlos" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label" target="_blank">
-                     <img class="blob" src="./assets/imgs/parejas/pareja-4.png" alt="Pareja viendo series y películas">
+                     <img class="blob" src="./assets/imgs/parejas/pareja-4.png" alt="Input y label viendo series y películas">
                      </a>
                   </figure>
                   <section class="parejas-info">
@@ -380,7 +380,7 @@
                <article class="parejas-figure">
                   <figure>
                      <a title="Descubre a esta familia" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio" target="_blank">
-                     <img class="blob" src="./assets/imgs/parejas/pareja-5.png" alt="Familia en la naturaleza">
+                     <img class="blob" src="./assets/imgs/parejas/pareja-5.png" alt="Familia de video, audio y figcaption en la naturaleza">
                      </a>
                   </figure>
                   <section class="parejas-info">
@@ -405,7 +405,7 @@
                <article class="parejas-figure">
                   <figure>
                      <a title="Explora con ellos" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a" target="_blank">
-                     <img class="blob" src="./assets/imgs/parejas/pareja-6.png" alt="Dos amigos explorando la naturaleza">
+                     <img class="blob" src="./assets/imgs/parejas/pareja-6.png" alt="Dos amigos a e img explorando la naturaleza">
                      </a>
                   </figure>
                   <section class="parejas-info">
@@ -431,7 +431,7 @@
                <article class="parejas-figure">
                   <figure>
                      <a title="Conoce su historia" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote" target="_blank">
-                     <img class="blob" src="./assets/imgs/parejas/pareja-7.png" alt="Pareja literaria escribiendo una cita">
+                     <img class="blob" src="./assets/imgs/parejas/pareja-7.png" alt="blockquote y cite  escribiendo una cita">
                      </a>
                   </figure>
                   <section class="parejas-info">
@@ -534,15 +534,16 @@
             </section>
          </section>
          <section id="formularios-box">
-            <form action="registro_usuario.php" method="post">
-               <fieldset>
+            <form action="registro_usuario.php" method="post" enctype="multipart/form-data" id="miFormulario">
+         
+              <fieldset>
                   <legend>Descríbete</legend>
                   <label for="apodo">¿Cual es tu apodo favorito?</label>
                   <input type="text" id="apodo" />
                   <label for="otro_tag" >Si fueras otro tag, ¿cuál te gustaría ser y por qué?</label>
                   <input type="text" id="otro_tag" minlength="1" maxlength="50"/>
                   <label for="tiempo_libre">¿Qué te gusta hacer en tu tiempo libre?</label>
-                  <textarea type="text" id="tiempo_libre" rows="4" cols="60" minlength="1" maxlength="400"> </textarea>
+                  <textarea type="text" id="tiempo_libre" rows="4" cols="55" minlength="1" maxlength="400"> </textarea>
                   <label for="color_favorito" >¿Cual es el color que mejor te representa?</label>
                   <input type="color" id="color_favorito" value="#FF0000">
                   <label for="tags_pasados" >¿Cual consideras que fue el tag que más te marcó?</label>
@@ -583,7 +584,7 @@
                <fieldset>
                   <legend>¿Qué buscas?</legend>
                   <label for="caracteristicas"></label>
-                  <textarea name="caracteristicas" id="caracteristicas" rows="3" cols="60" minlength="1" maxlength="300" placeholder="Describe lo que buscas en un tag..."></textarea>
+                  <textarea name="caracteristicas" id="caracteristicas" rows="3" cols="55" minlength="1" maxlength="300" placeholder="Describe lo que buscas en un tag..."></textarea>
                   <label for="frase_representativa"></label>
                   <input type="text" id="frase_representativa" minlength="1" maxlength="100" placeholder="Una frase de película o libro que describa a tu tag ideal...">
                   <label for="cancion_representativa"></label>
@@ -672,8 +673,6 @@
                     <label for="rating_abierto5">⭐⭐⭐⭐⭐</label>
                   </section>
                   
-                  
-
                </fieldset>
                <fieldset>
                   <legend>Propuesta...</legend>
@@ -705,13 +704,60 @@
                      </div>
                   </section>
                   <label for="disfraz">¿Nos disfrazamos?</label>
-                  <textarea name="disfraz" id="disfraz" placeholder="Dinos si quieres que os conozcáis distrazados de otros tags.." rows="5" cols="60"></textarea>
+                  <textarea name="disfraz" id="disfraz" placeholder="Dinos si quieres que os conozcáis distrazados de otros tags.." rows="5" cols="55"></textarea>
+                  <label for="disfraz">Sube una foto o fotos del tipo de cambiente que buscas encontrar</label>
+                  <input type="file" name="foto_cosplay" accept="image/*" multiple>    
+                  <label for="fecha_cita">Elige un día para quedar.</label>
+                  <input type="date" name="fecha_cita" id="fecha_cita">
+                  <label for="url_cita">Manda una url de un bar/restaurante/discoteca para quedar...</label>
+                  <input type="url" placeholder="URL" name="url_cita" id="url_cita">
                </fieldset>
-               <footer>
-                 <input type="submit" value="Registrar formulario">
+               <footer >
+                 <input type="submit" value="Registrar formulario" >
                  <input type="reset" value="Reiniciar formulario">
                 </footer>
             </form>
+         </section>
+         <section id="login-box">
+              <form action="registrar_usuario.php" method="post">
+                <fieldset>
+                  <legend>Conectarse con cuenta existente</legend>
+                  <section>
+                    <div>
+                      <label for="correo">Correo electrónico:</label>
+                      <input  type="email" id="correo" />
+                    </div>
+                    <div>
+                      <label  for="contrasena">Contraseña:</label>
+                      <input type="password" id="contrasena">
+                    </div>
+                  </section>
+                </fieldset>
+                <input type="submit" value="Conectar">
+              </form>
+                <span> O </span>
+              <form action="registrar_usuario.php" method="post">
+                <fieldset>
+                  <legend>Registrarse</legend>
+                  <section>
+                    <div>
+                      <label for="nombre">Nombre completo:</label>
+                      <input  type="text" id="nombre" />
+                    </div>
+                    <div>
+                      <label for="correo">Correo electrónico:</label>
+                      <input  type="email" id="correo" />
+                    </div>
+                  </section>
+                  <section>
+                    <label  for="contrasena">Contraseña:</label>
+                    <input type="password" id="contrasena">
+                    <label  for="confirmar_contrasena">Confirmar contraseña:</label>
+                    <input type="password" id="confirmar_contrasena">
+                  </section>
+                </fieldset>
+                <input type="submit" value="Registrarse">
+              </form>
          </section>
       </main>
       <footer></footer>
