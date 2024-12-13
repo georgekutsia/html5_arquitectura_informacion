@@ -142,7 +142,7 @@ transition: 0.3s ease-in-out;
   border-radius: 5px;
   background-color: rgba(0, 183, 255, 0.12);
 }
-.solteros-profile-description p {
+.solteros-profile-description p, .solteros-profile-description h3 {
   text-align: left;
   text-indent: 10px;
   padding-bottom: 10px;
