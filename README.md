@@ -1,5 +1,5 @@
 # html5_arquitectura_informacion
-
+## Proyecto 1 Ciberseguridad
 El enfoque de este proyecto es **HTML**, pero también quería hacer algo original, un tema raro y digno de mostrar en el portfolio, así que usé un mínimo de **JavaScript** para manejar el navbar y **CSS** para hacerlo llamativo.
 
 ### El validador me da 12 errores, bajé de 64, pero no estoy de acuerdo con esos errores
