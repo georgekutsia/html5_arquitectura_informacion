@@ -84,7 +84,7 @@ mark{
 }
 
 #solteros-box {
-  display:none; /*aqui*/
+  display:block; /*aqui*/
   text-align: center;
   margin: auto;
   margin-top: 50px;
@@ -244,7 +244,7 @@ font-size: calc(12px + 0.3vw);
   align-items: left;
 }
 #formularios-box{
-  display: block; /*aqui*/
+  display: none; /*aqui*/
 }
 #formularios-box-frase{
   padding: 10px;
