@@ -19,7 +19,7 @@
             <!-- si quito el css, la barra de navegación queda en 3 líneas por tenerlas separadas con div... 
                si quisiera hacerlo todo en la misma línea quitaría los div y el h3 -->
             <div>
-               <img class="nav-img-icon" src="/assets/imgs/icons/prof.png" alt="imágen de perfil de usuario" height="50px">
+               <img class="nav-img-icon" src="/assets/imgs/icons/prof.png" alt="imágen de perfil de usuario" height="50px"><!--no sé por qué está mal ponerle altura en línea-->
                <button title="Nuestras etiquetas que sin cierre">Abiertas</button>
                <button title="Las historias felices">Cerradas</button>
                <button title="Encuentra lo que buscas">Formular</button>
@@ -34,6 +34,7 @@
                   <span>v</span>
                   <span>e</span> 
                   <span class="heart-span">
+<!-- me sale avisoque div no debe ser hijo de span, pero quería crear este botón y es la forma más facil que se me ocurre.. -->
                      <div class="lds-heart"> <div></div></div>
                   </span>
                </h3>
@@ -261,12 +262,12 @@
             </section>
          </section>
          <section id="historias-felices-box">
-            <section class="title-section">
+            <div class="title-section">
                <h2>Nuestras historias de éxito</h2>
                <h3>Parejas inseparables que nos alegra ver todavía juntas. Nos sentimos orgullosos de su éxito conjunto</h3>
                <h3>y que hayan encontrado su media naranja a través de nosotros</h3>
-            </section>
-            <section id="historias-felices-articles">
+            </div>
+            <div id="historias-felices-articles"> <!--podría ser section, pero parece que necesita siempre h2 o h3, y no lo necesita-->
                <article class="parejas-figure">
                   <figure>
                      <a  title="Ven a mi..." href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/thead" target="_blank">
@@ -424,7 +425,8 @@
                      <footer>
                         <p>
                            Contado con emoción por <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a" target="_blank">a</a>
-                     </foot                     </p>er>
+                          </p>
+                     </footer>
                   </section>
                </article>
                <article class="parejas-figure">
@@ -534,17 +536,17 @@
                      </footer>
                   </section>
                </article>
-            </section>
+            </div>
          </section>
          <section id="formularios-box">
+          <h3 id="formularios-box-frase">Ayúdanos a ayudarte, cuéntanos para cerrarte</h3>
             <form action="registro_usuario.php" method="post" enctype="multipart/form-data" id="miFormulario">
-         
               <fieldset>
                   <legend>Descríbete</legend>
                   <label for="apodo">¿Cual es tu apodo favorito?</label>
-                  <input type="text" id="apodo" name="apodo" />
+                  <input type="text" id="apodo" name="apodo" >
                   <label for="otro_tag" >Si fueras otro tag, ¿cuál te gustaría ser y por qué?</label>
-                  <input type="text" id="otro_tag" name="otro_tag" minlength="1" maxlength="50"/>
+                  <input type="text" id="otro_tag" name="otro_tag" minlength="1" maxlength="50">
                   <label for="tiempo_libre">¿Qué te gusta hacer en tu tiempo libre?</label>
                   <textarea  id="tiempo_libre" rows="4" cols="55" minlength="1" maxlength="400"> </textarea>
                   <label for="color_favorito" >¿Cual es el color que mejor te representa?</label>
@@ -560,6 +562,8 @@
                      <option value="label">Label</option>
                   </select>
                   <label for="explorador">¿En cual explorador te gusta aparecer con más frecuencia? <em>(Elige una opción)</em> </label>
+                  <!-- sale error diciendo basicamente que no puedo separar for="explorador" de toda la seccion de bajo con div, pero 
+                   entonces no sé cómo darle el aspecto que le quiero dar. creo que funcionamente debería funcionar igual -->
                   <div class="explorador-selector">
                      <input type="radio" name="explorador" value="Chrome" id="chrome">
                      <label for="chrome">Chrome</label>
@@ -571,6 +575,7 @@
                      <label for="firefox">Firefox</label>
                   </div>
                   <label for="bad-explorer">¿En cuales no quieres aparecer nunca? <em>(puedes elegir varias opciones)</em> </label>
+                  <!-- el mismo error que en la seccion de arriba -->
                   <div class="explorador-selector">
                      <input type="checkbox" name="bad-explorer" value="bad-Chrome" id="bad-Chrome">
                      <label for="bad-Chrome">Chrome</label>
@@ -582,7 +587,7 @@
                      <label for="bad-Firefox">Firefox</label>
                   </div>
                   <label for="mensaje_presentacion">Escribe un mensaje de presentación <em>(max 50 caracteres)</em> </label>
-                  <input type="text" id="mensaje_presentacion" minlength="1" maxlength="50" />
+                  <input type="text" id="mensaje_presentacion" minlength="1" maxlength="50" >
                </fieldset>
                <fieldset>
                   <legend>¿Qué buscas?</legend>
@@ -606,7 +611,7 @@
                   </datalist>
 
                   <label for="rating_adventure">¿Cuánto debe amar <em>(tu tag ideal)</em> aventuras fuera de browser?</label>
-                  <section class="star-rating">
+                  <div class="star-rating">
                     <input type="radio" name="rating_adventure" id="rating_adventure1" value="1">
                     <label for="rating_adventure1">❤️</label>
                     <input type="radio" name="rating_adventure" id="rating_adventure2" value="2">
@@ -617,10 +622,10 @@
                     <label for="rating_adventure4">❤️❤️❤️❤️</label>
                     <input type="radio" name="rating_adventure" id="rating_adventure5" value="5">
                     <label for="rating_adventure5">❤️❤️❤️❤️❤️</label>
-                  </section>
+                  </div>
 
                   <label for="rating_sport">¿Cuánto debe amar <em>(tu tag ideal)</em> hacer deporte a diario?</label>
-                  <section class="star-rating">
+                  <div class="star-rating">
                     <input type="radio" name="rating_sport" id="rating_sport1" value="1">
                     <label for="rating_sport1">❤️</label>
                     <input type="radio" name="rating_sport" id="rating_sport2" value="2">
@@ -631,10 +636,10 @@
                     <label for="rating_sport4">❤️❤️❤️❤️</label>
                     <input type="radio" name="rating_sport" id="rating_sport5" value="5">
                     <label for="rating_sport5">❤️❤️❤️❤️❤️</label>
-                  </section>
+                  </div>
                   
                   <label for="rating_localhost">¿Cuánto debe amar <em>(tu tag ideal)</em> hacer vida en localhost?</label>
-                  <section class="star-rating">
+                  <div class="star-rating">
                     <input type="radio" name="rating_localhost" id="rating_localhost1" value="1">
                     <label for="rating_localhost1">❤️</label>
                     <input type="radio" name="rating_localhost" id="rating_localhost2" value="2">
@@ -645,10 +650,10 @@
                     <label for="rating_localhost4">❤️❤️❤️❤️</label>
                     <input type="radio" name="rating_localhost" id="rating_localhost5" value="5">
                     <label for="rating_localhost5">❤️❤️❤️❤️❤️</label>
-                  </section>
+                  </div>
                   
                   <label for="rating_masaje">¿Cómo valorarías masaje en los pies?</label>
-                  <section class="star-rating">
+                  <div class="star-rating">
                     <input type="radio" name="rating_masaje" id="rating_masaje1" value="1">
                     <label for="rating_masaje1">⭐</label>
                     <input type="radio" name="rating_masaje" id="rating_masaje2" value="2">
@@ -659,11 +664,11 @@
                     <label for="rating_masaje4">⭐⭐⭐⭐</label>
                     <input type="radio" name="rating_masaje" id="rating_masaje5" value="5">
                     <label for="rating_masaje5">⭐⭐⭐⭐⭐</label>
-                  </section>
+                  </div>
                   
                   
                   <label for="rating_abierto">¿Quieres que esté abierto a relaciones con otros tags?</label>
-                  <section class="star-rating">
+                  <div class="star-rating">
                     <input type="radio" name="rating_abierto" id="rating_abierto1" value="1">
                     <label for="rating_abierto1">⭐</label>
                     <input type="radio" name="rating_abierto" id="rating_abierto2" value="2">
@@ -674,13 +679,13 @@
                     <label for="rating_abierto4">⭐⭐⭐⭐</label>
                     <input type="radio" name="rating_abierto" id="rating_abierto5" value="5">
                     <label for="rating_abierto5">⭐⭐⭐⭐⭐</label>
-                  </section>
+                  </div>
                   
                </fieldset>
                <fieldset>
                   <legend>Propuesta...</legend>
                   <label for="tag-cita">¿Dónde te gustaría tener la primera cita? <em>(puedes elegir varias opciones)</em></label>
-                  <section class="cita-box">
+                  <div class="cita-box">
                      <div class="explorador-selector">
                         <input type="checkbox" name="tag-cita" value="parque-css" id="parque-css">
                         <label for="parque-css">Un parque diseñado con CSS</label>
@@ -705,7 +710,7 @@
                         <input type="checkbox" name="tag-cita" value="montana-api" id="montana-api">
                         <label for="montana-api">Una montaña llena de APIs</label>
                      </div>
-                  </section>
+                  </div>
                   <label for="disfraz">¿Nos disfrazamos?</label>
                   <textarea name="disfraz" id="disfraz" placeholder="Dinos si quieres que os conozcáis distrazados de otros tags.." rows="5" cols="55"></textarea>
                   <label for="disfraz">Sube una foto o fotos del tipo de cambiente que buscas encontrar</label>
@@ -722,19 +727,20 @@
             </form>
          </section>
          <section id="login-box">
+          <h2>¿Tienes cuenta o necesitas? </h2>
               <form action="registrar_usuario.php" method="post">
                 <fieldset>
                   <legend>Conectarse con cuenta existente</legend>
-                  <section>
+                  <div>
                     <div>
                       <label for="correo_login">Correo electrónico:</label>
-                      <input  type="email" id="correo_login" />
+                      <input  type="email" id="correo_login" >
                     </div>
                     <div>
                       <label  for="contrasena_login">Contraseña:</label>
                       <input type="password" id="contrasena_login">
                     </div>
-                  </section>
+                  </div>
                 </fieldset>
                 <input type="submit" value="Conectar">
               </form>
@@ -742,22 +748,22 @@
               <form action="registrar_usuario.php" method="post">
                 <fieldset>
                   <legend>Registrarse</legend>
-                  <section>
+                  <div>
                     <div>
                       <label for="nombre">Nombre completo:</label>
-                      <input  type="text" id="nombre" />
+                      <input  type="text" id="nombre" >
                     </div>
                     <div>
                       <label for="correo_regis">Correo electrónico:</label>
-                      <input  type="email" id="correo_regis" />
+                      <input  type="email" id="correo_regis">
                     </div>
-                  </section>
-                  <section>
+                  </div>
+                  <div>
                     <label  for="contrasena">Contraseña:</label>
                     <input type="password" id="contrasena">
                     <label  for="confirmar_contrasena">Confirmar contraseña:</label>
                     <input type="password" id="confirmar_contrasena">
-                  </section>
+                  </div>
                 </fieldset>
                 <input type="submit" value="Registrarse">
               </form>
@@ -769,7 +775,7 @@
           <p><strong>Email:</strong> <a href="mailto:contacto@taglove.com">htmlove_boss@taglove.com</a> - - - -  <strong>Teléfono</strong> +34 123 456 789</p>
         </section>
         <section>
-          <p>&copy; 2024 <strong>TagLove Inc.</strong> - "Unimos etiquetas en un solo documento."</p>
+          <h4>&copy; 2024 <strong>TagLove Inc.</strong> - "Unimos etiquetas en un solo documento."</h4>
           <p>Todos los derechos reservados. Diseñado con amor en <mark>&lt;mi sofá en canarias&gt;</mark>.</p>
         </section>
         <section>

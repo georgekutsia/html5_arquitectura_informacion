@@ -244,7 +244,11 @@ font-size: calc(12px + 0.3vw);
   align-items: left;
 }
 #formularios-box{
-  display: none; /*aqui*/
+  display: block; /*aqui*/
+}
+#formularios-box-frase{
+  padding: 10px;
+  letter-spacing: 3px;
 }
 #formularios-box  form{
   display: flex;
@@ -401,7 +405,7 @@ font-size: calc(12px + 0.3vw);
   font-size: 30px;
 }
 #login-box{
-  display: block; /*aqui*/
+  display: none; /*aqui*/
   height: 40vh;
   padding: 20vh 5vw;
   margin-left: 50%;
@@ -416,7 +420,7 @@ font-size: calc(12px + 0.3vw);
   padding: 20px;
 }
 
-#login-box form fieldset section{
+#login-box form fieldset section, #login-box form fieldset div {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;

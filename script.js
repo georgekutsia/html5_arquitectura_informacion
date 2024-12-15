@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       
         buttonFormula$$.addEventListener("click", () => {
-          formulariosBox$$.style.display = "flex"; 
+          formulariosBox$$.style.display = "block"; 
           historiasFelicesBox$$.style.display = "none"; 
           solterosBox$$.style.display = "none"; 
           loginBox$$.style.display = "none"; 
