@@ -4,10 +4,11 @@
 }
 
 body {
-  background-color: rgba(246, 205, 251, 0.353);
+  background-color: rgba(246, 205, 251, 0.536);
   margin: 2vh 10vw;
   padding: 0px;
 }
+
 em{
   background-color: transparent;
 }
@@ -70,6 +71,10 @@ mark{
   font-size: calc(10px + 0.5vw);
   padding: 1px 3px;
   border-radius: 10px;
+  transition: 0.4s ease-in-out;
+}
+.nav-box div button:hover {
+  letter-spacing: 1.2px;
 }
 
 .nav-box div a {
@@ -453,6 +458,7 @@ footer a {
 #footer:hover{
   height: 140px;
 background-color: #fff8ce;
-
   transition-delay: 0s;
 }
+
+
