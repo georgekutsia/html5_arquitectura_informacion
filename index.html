@@ -13,6 +13,7 @@
       <meta name="author" content="George Kutsia">
       <link rel="stylesheet" href="style.css">
       <link rel="stylesheet" href="animations.css">
+      <link rel="stylesheet" href="media.css">
       <script src="script.js" defer></script>
       <title>HTML love place</title>
    </head>
@@ -27,8 +28,8 @@
                <button title="Las historias felices">Cerradas</button>
                <button title="Encuentra lo que buscas">Formular</button>
             </div>
-            <div>
-               <h3>
+            <div >
+               <h1>
                   <span>H</span>
                   <span>T</span>
                   <span>M</span>
@@ -40,12 +41,11 @@
 <!-- me sale avisoque div no debe ser hijo de span, pero quería crear este botón y es la forma más facil que se me ocurre.. -->
                      <div class="lds-heart"> <div></div></div>
                   </span>
-               </h3>
+               </h1>
             </div>
             <div>
-              <a href="https://portfolio-george-kutsia.netlify.app/" target="_blank" title="Lo que pretendo que sea mi porftolio">Atención al usuario</a>
+              <a class="atencion-al-usuario" href="https://portfolio-george-kutsia.netlify.app/" target="_blank" title="Lo que pretendo que sea mi porftolio">Atención al usuario</a>
               <button class="loader2"  title="Logarse / Crear perfil">I</button>
-
             </div>
          </nav>
       </header>
@@ -543,7 +543,7 @@
          </section>
          <section id="formularios-box">
           <h3 id="formularios-box-frase">Ayúdanos a ayudarte, cuéntanos para cerrarte</h3>
-            <form action="registro_usuario.php" method="post" enctype="multipart/form-data" id="miFormulario">
+            <form action="registro_usuario.php" method="post" enctype="multipart/form-data" >
               <fieldset>
                   <legend>Descríbete</legend>
                   <label for="apodo">¿Cual es tu apodo favorito?</label>
@@ -551,7 +551,7 @@
                   <label for="otro_tag" >Si fueras otro tag, ¿cuál te gustaría ser y por qué?</label>
                   <input type="text" id="otro_tag" name="otro_tag" minlength="1" maxlength="50">
                   <label for="tiempo_libre">¿Qué te gusta hacer en tu tiempo libre?</label>
-                  <textarea  id="tiempo_libre" rows="4" cols="55" minlength="1" maxlength="400"> </textarea>
+                  <textarea  id="tiempo_libre" rows="4" cols="35" minlength="1" maxlength="400"> </textarea>
                   <label for="color_favorito" >¿Cual es el color que mejor te representa?</label>
                   <input type="color" id="color_favorito" value="#FF0000">
                   <label for="tags_pasados" >¿Cual consideras que fue el tag que más te marcó?</label>
@@ -595,7 +595,7 @@
                <fieldset>
                   <legend>¿Qué buscas?</legend>
                   <label for="caracteristicas"></label>
-                  <textarea name="caracteristicas" id="caracteristicas" rows="3" cols="55" minlength="1" maxlength="300" placeholder="Describe lo que buscas en un tag..."></textarea>
+                  <textarea name="caracteristicas" id="caracteristicas" rows="3" cols="35" minlength="1" maxlength="300" placeholder="Describe lo que buscas en un tag..."></textarea>
                   <label for="frase_representativa"></label>
                   <input type="text" id="frase_representativa" minlength="1" maxlength="100" placeholder="Una frase de película o libro que describa a tu tag ideal...">
                   <label for="cancion_representativa"></label>
@@ -623,8 +623,7 @@
                     <label for="rating_adventure3">❤️❤️❤️</label>
                     <input type="radio" name="rating_adventure" id="rating_adventure4" value="4">
                     <label for="rating_adventure4">❤️❤️❤️❤️</label>
-                    <input type="radio" name="rating_adventure" id="rating_adventure5" value="5">
-                    <label for="rating_adventure5">❤️❤️❤️❤️❤️</label>
+
                   </div>
 
                   <label for="rating_sport">¿Cuánto debe amar <em>(tu tag ideal)</em> hacer deporte a diario?</label>
@@ -637,8 +636,6 @@
                     <label for="rating_sport3">❤️❤️❤️</label>
                     <input type="radio" name="rating_sport" id="rating_sport4" value="4">
                     <label for="rating_sport4">❤️❤️❤️❤️</label>
-                    <input type="radio" name="rating_sport" id="rating_sport5" value="5">
-                    <label for="rating_sport5">❤️❤️❤️❤️❤️</label>
                   </div>
                   
                   <label for="rating_localhost">¿Cuánto debe amar <em>(tu tag ideal)</em> hacer vida en localhost?</label>
@@ -651,8 +648,6 @@
                     <label for="rating_localhost3">❤️❤️❤️</label>
                     <input type="radio" name="rating_localhost" id="rating_localhost4" value="4">
                     <label for="rating_localhost4">❤️❤️❤️❤️</label>
-                    <input type="radio" name="rating_localhost" id="rating_localhost5" value="5">
-                    <label for="rating_localhost5">❤️❤️❤️❤️❤️</label>
                   </div>
                   
                   <label for="rating_masaje">¿Cómo valorarías masaje en los pies?</label>
@@ -665,11 +660,7 @@
                     <label for="rating_masaje3">⭐⭐⭐</label>
                     <input type="radio" name="rating_masaje" id="rating_masaje4" value="4">
                     <label for="rating_masaje4">⭐⭐⭐⭐</label>
-                    <input type="radio" name="rating_masaje" id="rating_masaje5" value="5">
-                    <label for="rating_masaje5">⭐⭐⭐⭐⭐</label>
                   </div>
-                  
-                  
                   <label for="rating_abierto">¿Quieres que esté abierto a relaciones con otros tags?</label>
                   <div class="star-rating">
                     <input type="radio" name="rating_abierto" id="rating_abierto1" value="1">
@@ -680,8 +671,6 @@
                     <label for="rating_abierto3">⭐⭐⭐</label>
                     <input type="radio" name="rating_abierto" id="rating_abierto4" value="4">
                     <label for="rating_abierto4">⭐⭐⭐⭐</label>
-                    <input type="radio" name="rating_abierto" id="rating_abierto5" value="5">
-                    <label for="rating_abierto5">⭐⭐⭐⭐⭐</label>
                   </div>
                   
                </fieldset>
@@ -715,7 +704,7 @@
                      </div>
                   </div>
                   <label for="disfraz">¿Nos disfrazamos?</label>
-                  <textarea name="disfraz" id="disfraz" placeholder="Dinos si quieres que os conozcáis distrazados de otros tags.." rows="5" cols="55"></textarea>
+                  <textarea name="disfraz" id="disfraz" placeholder="Dinos si quieres que os conozcáis distrazados de otros tags.." rows="5" cols="35"></textarea>
                   <label for="disfraz">Sube una foto o fotos del tipo de cambiente que buscas encontrar</label>
                   <input type="file" name="foto_cosplay" accept="image/*" multiple>    
                   <label for="fecha_cita">Elige un día para quedar.</label>
@@ -775,23 +764,35 @@
       <footer id="footer" >
         <section>
           <h4>Contacto</h4>
-          <p><strong>Email:</strong> <a href="mailto:contacto@taglove.com">htmlove_boss@taglove.com</a> - - - -  <strong>Teléfono</strong> +34 123 456 789</p>
+          <div class="contact-p">
+               <p><strong>Email:</strong> <a href="mailto:contacto@taglove.com">htmlove_boss@taglove.com</a> 
+               <p><strong>Teléfono</strong> +34-123-456-789</p></p>
+            </div>
         </section>
         <section>
-          <h4>&copy; 2024 <strong>TagLove Inc.</strong> - "Unimos etiquetas en un solo documento."</h4>
-          <p>Todos los derechos reservados. Diseñado con amor en <mark>&lt;mi sofá en canarias&gt;</mark>.</p>
+         <div class="contact-p">
+          <h4>&copy; 2024 <strong>TagLove Inc.</strong> </h4>- <h4></h4> "Unimos etiquetas en un solo documento."</h4>
+         </div>
         </section>
         <section>
           <h4>Síguenos, estamos en todas partes</h4>
-          <a href="https://www.facebook.com" target="_blank"><img src="/assets/imgs/icons/face.png" alt="icono de facebook"></a> 
-          <a href="https://www.gmail.com" target="_blank"><img src="/assets/imgs/icons/g++.png" alt="icono de facebook"></a> 
-          <a href="https://www.instagram.com" target="_blank"><img src="/assets/imgs/icons/ins.png" alt="icono de facebook"></a> 
-          <a href="https://www.linkedin.com" target="_blank"><img src="/assets/imgs/icons/lin.png" alt="icono de facebook"></a> 
-          <a href="https://www.pinterest.com" target="_blank"><img src="/assets/imgs/icons/pin.png" alt="icono de facebook"></a> 
-          <a href="https://www.snapchat.com" target="_blank"><img src="/assets/imgs/icons/snap.png" alt="icono de facebook"></a> 
-          <a href="https://www.twitter.com" target="_blank"><img src="/assets/imgs/icons/twit.png" alt="icono de facebook"></a> 
-          <a href="https://www.whatsapp.com" target="_blank"><img src="/assets/imgs/icons/wha.png" alt="icono de facebook"></a> 
-          <a href="https://www.youtube.com" target="_blank"><img src="/assets/imgs/icons/you.png" alt="icono de facebook"></a> 
+          <p class="wrap">Todos los derechos reservados. Diseñado con amor en <mark>&lt;mi sofá en canarias&gt;</mark>.</p>
+          <div class="contact-a">
+            <!-- si solo dejo img puedo hacer flex wrap y que en responsive quede bien, pero prefiero dejarlo con a y dividir en 2 partes -->
+             <div>
+                <a href="https://www.facebook.com" target="_blank"><img src="/assets/imgs/icons/face.png" alt="icono de facebook"></a> 
+                <a href="https://www.gmail.com" target="_blank"><img src="/assets/imgs/icons/g++.png" alt="icono de google"></a> 
+                <a href="https://www.instagram.com" target="_blank"><img src="/assets/imgs/icons/ins.png" alt="icono de instagram"></a> 
+                <a href="https://www.linkedin.com" target="_blank"><img src="/assets/imgs/icons/lin.png" alt="icono de linkedin"></a> 
+               </div>
+               <div>
+                  <a href="https://www.pinterest.com" target="_blank"><img src="/assets/imgs/icons/pin.png" alt="icono de pinterest"></a> 
+                  <a href="https://www.twitter.com" target="_blank"><img src="/assets/imgs/icons/twit.png" alt="icono de twitter"></a> 
+                  <a href="https://www.whatsapp.com" target="_blank"><img src="/assets/imgs/icons/wha.png" alt="icono de whatsapp"></a> 
+                  <a href="https://www.youtube.com" target="_blank"><img src="/assets/imgs/icons/you.png" alt="icono de youtube"></a> 
+                   <a href="https://www.snapchat.com" target="_blank"><img src="/assets/imgs/icons/snap.png" alt="icono de snapchat"></a> 
+               </div>
+            </div>
         </section>
       </footer>
     </body>
