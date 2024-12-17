@@ -2,43 +2,40 @@
   margin: 0;
   padding: 0;
 }
-
 body {
   background-color: rgba(246, 205, 251, 0.536);
   margin: 2vh 10vw;
   padding: 0px;
 }
 legend{
-    text-align: left;
-    background-color: transparent;
-    font-size: calc(14px + 0.5vw);
+  text-align: left;
+  background-color: transparent;
+  font-size: calc(14px + 0.5vw);
 }
 em {
   background-color: transparent;
 }
-button,
-a {
+button, a {
   cursor: pointer;
   text-decoration: none;
   color: inherit;
   border: none;
 }
-textarea,
-input {
+textarea, input {
   padding: 5px;
 }
 form {
   padding: 30px 0px;
 }
-input[type='radio'],
-input[type='checkbox'] {
-  vertical-align: middle; /* Alinea los botones con el texto */
-  margin: 0px 5px 0px 15px; /* Añade un pequeño espacio entre el botón y el texto */
+input[type='radio'], input[type='checkbox'] {
+  vertical-align: middle;
+ /* Alinea los botones con el texto */
+  margin: 0px 5px 0px 15px;
+ /* Añade un pequeño espacio entre el botón y el texto */
 }
 #formularios-box input[type='text'] {
   width: 90%;
 }
-
 label {
   background-color: transparent;
 }
@@ -70,7 +67,6 @@ mark {
   display: flex;
   gap: 1vw;
 }
-
 .nav-box div button {
   background-color: transparent;
   font-size: calc(10px + 0.5vw);
@@ -81,15 +77,14 @@ mark {
 .nav-box div button:hover {
   letter-spacing: 1.2px;
 }
-
 .nav-box div a {
   font-size: calc(10px + 0.5vw);
   padding: 5px 10px;
   background-color: rgba(0, 0, 0, 0.329);
 }
-
 #solteros-box {
-  display: none; /*aqui*/
+  display: none;
+ /*aqui*/
   text-align: center;
   margin: auto;
   margin-top: 50px;
@@ -100,7 +95,6 @@ mark {
   border-radius: 20px;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.266);
 }
-
 .solteros-perfil-box {
   display: flex;
   justify-content: space-evenly;
@@ -109,7 +103,6 @@ mark {
   padding: 30px;
   gap: 30px;
 }
-
 .solteros-perfil-figure {
   background-color: rgba(195, 253, 255, 0.349);
   padding: 10px 10px;
@@ -117,7 +110,6 @@ mark {
   width: calc(150px + 10vw);
   min-height: calc(200px + 20vw);
 }
-
 .solteros-perfil-figure h3 {
   font-size: calc(12px + 0.4vw);
 }
@@ -132,7 +124,6 @@ mark {
   transition: 0.3s ease-in-out;
   width: 90%;
 }
-
 .solteros-perfil-figure img:hover {
   border-radius: 12px;
 }
@@ -144,7 +135,6 @@ mark {
   padding: 10px 4px;
   margin: 10px 0px;
 }
-
 .solteros-profile-description {
   position: relative;
   padding: 20px 10px;
@@ -152,8 +142,7 @@ mark {
   border-radius: 5px;
   background-color: rgba(0, 183, 255, 0.12);
 }
-.solteros-profile-description p,
-.solteros-profile-description h3 {
+.solteros-profile-description p, .solteros-profile-description h3 {
   text-align: left;
   text-indent: 10px;
   padding-bottom: 10px;
@@ -178,14 +167,13 @@ mark {
   border-radius: 10px;
   border: 1px dotted red;
 }
-
 /* historias felices parejas */
 /* historias felices parejas */
 #historias-felices-box {
-  display: none; /*aqui*/
+  display: none;
+ /*aqui*/
   text-align: center;
 }
-
 .title-section h2 {
   font-size: calc(25px + 0.6vw);
   margin: 60px 0px 10px 0px;
@@ -201,7 +189,8 @@ mark {
   background-color: rgba(255, 221, 195, 0.349);
   padding: 10px 10px;
   border-radius: 10px;
-  /* width: 35vw; */
+ /* width: 35vw;
+  */
   display: flex;
   margin-top: 50px;
 }
@@ -227,24 +216,23 @@ mark {
 .parejas-info section q {
   font-size: calc(12px + 0.3vw);
 }
-
 #historias-felices-articles {
   display: grid;
-  /* grid-template-rows: 50px 100px;  no necesitamos por ahora*/
+ /* grid-template-rows: 50px 100px;
+  no necesitamos por ahora*/
   grid-template-columns: 45% 45%;
   grid-gap: 0 10%;
 }
-
 /* historias felices parejas */
 /* historias felices parejas */
-
 /* formularios */
 /* formularios */
 #formularios-box {
   border: 1px solid black;
   text-align: left;
   align-items: left;
-  display: none; /*aqui*/
+  display: none;
+ /*aqui*/
 }
 #formularios-box-frase {
   padding: 10px;
@@ -262,70 +250,56 @@ mark {
   position: absolute;
   bottom: 10px;
 }
-#formularios-box form input[type='submit']:hover,
-#formularios-box form input[type='reset']:hover {
+#formularios-box form input[type='submit']:hover, #formularios-box form input[type='reset']:hover {
   background-color: rgb(122, 122, 250);
   cursor: pointer;
 }
-
 #formularios-box fieldset {
   border: 1px solid black;
   margin-bottom: 30px;
   padding: 5px 10px;
-  background: linear-gradient(
-    to left,
-    rgba(255, 197, 97, 0.349),
-    rgba(234, 255, 0, 0.188),
-    rgba(0, 0, 255, 0.095)
-  );
+  background: linear-gradient( to left, rgba(255, 197, 97, 0.349), rgba(234, 255, 0, 0.188), rgba(0, 0, 255, 0.095) );
 }
-
 #formularios-box fieldset label {
   display: block;
   margin: 10px 0px 5px;
   margin-left: 0;
 }
-
 .explorador-selector {
   display: flex;
   align-items: center;
   background-color: transparent;
 }
 .explorador-selector label {
-  display: inline-block; /* Asegura que el texto quede en línea con el botón */
+  display: inline-block;
+ /* Asegura que el texto quede en línea con el botón */
   height: 30px;
 }
-
 #tipo_tag {
   width: 20%;
 }
-
 .star-rating {
   display: flex;
   gap: 5px;
   height: 30px;
   justify-content: space-evenly;
 }
-
 .star-rating fieldset {
   border: none;
   text-align: center;
 }
-
 .star-rating input[type='radio'] {
-  display: none; /* Oculta los botones de radio */
+  display: none;
+ /* Oculta los botones de radio */
 }
-
 .star-rating label {
   font-size: 1rem;
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
 }
-
 .star-rating label:hover {
   transform: scale(1.2);
 }
-
 .star-rating input[type='radio']:checked + label {
   color: rgb(0, 140, 255);
   border: 1px solid blue;
@@ -335,7 +309,6 @@ mark {
 }
 /* formularios */
 /* formularios */
-
 .nav-box h1 {
   position: absolute;
   left: 50%;
@@ -383,28 +356,28 @@ mark {
   animation: growShrinkHeart 1s ease-in-out forwards;
   animation-delay: 1.4s;
 }
-.nav-box h1:hover .lds-heart div:before,
-.nav-box h1:hover .lds-heart div:after {
+.nav-box h1:hover .lds-heart div:before, .nav-box h1:hover .lds-heart div:after {
   animation: growShrinkHeart 1s ease-in-out forwards;
   animation-delay: 1.4s;
 }
-
 /* Estilo base para los botones */
 .nav-box button {
-  background-color: #007bff; /* Color de fondo inicial */
+  background-color: #007bff;
+ /* Color de fondo inicial */
   border: none;
   padding: 10px 15px;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease; /* Transición suave para el color */
+  transition: background-color 0.3s ease;
+ /* Transición suave para el color */
 }
-
 /* Estilo para cuando se hace clic en el botón */
 .nav-box button:active {
-  background-color: red; /* Cambia el fondo a rojo */
-  color: white; /* Asegura que el texto siga siendo legible */
+  background-color: red;
+ /* Cambia el fondo a rojo */
+  color: white;
+ /* Asegura que el texto siga siendo legible */
 }
-
 /* login */
 /* login */
 #login-box span {
@@ -413,26 +386,19 @@ mark {
   font-size: 30px;
 }
 #login-box {
-  display: block; /*aqui*/
+  display: block;
+ /*aqui*/
   height: 40vh;
   padding: 20vh 5vw;
   margin-left: 50%;
   transform: translateX(-50%);
 }
-
 #login-box form fieldset {
-  background: linear-gradient(
-    to left,
-    rgb(128, 128, 128),
-    rgb(255, 192, 192),
-    rgb(165, 165, 247)
-  );
+  background: linear-gradient( to left, rgb(128, 128, 128), rgb(255, 192, 192), rgb(165, 165, 247) );
   border: 1px solid black;
   padding: 20px;
 }
-
-#login-box form fieldset section,
-#login-box form fieldset div {
+#login-box form fieldset section, #login-box form fieldset div {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
@@ -441,11 +407,9 @@ mark {
 #login-box form fieldset section div {
   background-color: transparent;
 }
-
 #login-box form input:hover {
   background-color: rgb(148, 148, 255);
 }
-
 #footer {
   position: fixed;
   bottom: 0;
@@ -462,7 +426,6 @@ mark {
   background-color: #05376cca;
   align-items: center;
 }
-
 footer a img {
   width: 30px;
   transition: 0.7s ease-in-out;
@@ -479,7 +442,6 @@ footer a {
   background-color: #453d12;
   transition-delay: 0s;
 }
-
 .contact-p {
   display: flex;
   justify-content: center;
