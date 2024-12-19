@@ -7,7 +7,7 @@
  }
   #footer{
       width: 100%;
-      max-width: 75vw;
+      max-width: 90vw;
       height: 10px;
  }
   #footer section{
@@ -23,11 +23,12 @@
       align-items: center;
       gap: 30px;
       width: 100%;
- }
-  #footer:hover{
-      height: 70vh;
- }
-  .contact-p{
+    }
+    #footer:hover{
+        height: 70vh;
+    }
+    .contact-p{
+      background-color: blue;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -55,10 +56,12 @@
       display: block;
  }
   #formularios-box input[type="text"]{
-      width: 50%;
- }
-  #formularios-box fieldset{
-      max-width: 200px;
+      width: 80%;
+      
+    }
+    #formularios-box fieldset{
+      background-color: blue;
+      width: 85vw;
  }
   label{
       max-width: 300px;
