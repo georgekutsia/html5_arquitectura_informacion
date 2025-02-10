@@ -129,7 +129,7 @@
   40%{
       color: rgb(255, 0, 255);
  }
-  50%{
+  30%{
       transform: rotate(360deg) translateX(-50%);
       color: red;
       margin-left: 0px;

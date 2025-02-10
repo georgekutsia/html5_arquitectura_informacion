@@ -25,7 +25,7 @@
       width: 100%;
     }
     #footer:hover{
-        height: 70vh;
+        height: 40vh;
     }
     .contact-p{
       display: flex;
@@ -77,7 +77,7 @@
       transform: translateX(0%);
  }
   #login-box form fieldset div {
-      display: flex;
+      display: flnoneex;
       margin-top: 20px;
       background-color: transparent;
       flex-direction: column;

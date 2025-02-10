@@ -83,7 +83,7 @@ mark {
   background-color: rgba(0, 0, 0, 0.329);
 }
 #solteros-box {
-  display: none;
+  display: block;
  /*aqui*/
   text-align: center;
   margin: auto;
@@ -313,7 +313,7 @@ mark {
   position: absolute;
   left: 50%;
   font-size: calc(20px + 0.5vw);
-  animation: totleAnimation 4s linear;
+  animation: totleAnimation 2s linear;
   transform: translate(-50%);
   display: flex;
   letter-spacing: 5px;
@@ -386,7 +386,7 @@ mark {
   font-size: 30px;
 }
 #login-box {
-  display: block;
+  display: none;
  /*aqui*/
   height: 40vh;
   padding: 20vh 5vw;
